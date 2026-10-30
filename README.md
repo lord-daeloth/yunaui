@@ -1,5 +1,7 @@
 # YunaUI
 
+Based on YunaUI by Yunas - https://github.com/YunasXI/yunaui
+
 A complete, clean HUD for **CatsEyeXI** (VanaCore, the CatsEyeXI launcher's client), made to look like one modern interface: thin glowing bars,
 the AvantGarde-style font everywhere, and every piece placed where you like.
 
@@ -20,6 +22,14 @@ the AvantGarde-style font everywhere, and every piece placed where you like.
 - **Chat** with channel tabs, an optional combat log you can anchor beside it, timestamps and saved chat logs.
 - **Edit Mode**: every piece on a grid; drag it and it snaps into line. Ready-made layouts, and five of your own with a name.
 - Everything stays on screen at any resolution.
+
+## Modes
+
+- **Vex**: the original pink/purple interface with fixed player and target bars.
+- **Golden Vex**: Hex Link's gold/azure palette, angular frames and shaded hex bars with Vex's fixed player and target layout. Its first layout starts from your saved Vex layout; each mode then remembers its own positions.
+- **Hex Link**: the original gold interface with bars following the player and target overhead.
+
+Choose a mode in **/yui > GENERAL > MODE** or **/yui mode**. Clicking the YUNA UI logo cycles through all three. Use **/yui setgolden** to select Golden Vex directly, **/yui setvex** for Vex, or **/yui sethex** for Hex Link.
 
 ## Install
 

@@ -2913,9 +2913,12 @@ function JOBS.statbar(key, value, v, lag, pct)
         local thk = (key == 'mp') and (tonumber(cfg.sb_mp_thick) or tonumber(cfg.sb_thick)) or tonumber(cfg.sb_thick);   -- BARS > HP / MP bar thickness
         local bh = math.max(2, math.floor(4 * sc * math.max(0.5, math.min(3, thk or 1)) + 0.5));
         local by = vy + vh + 3 * sc;
-        JOBS.ybar(dl, x, by, w, bh, v, lag, d[2], d[3], d[5] * 1.7 + 0.4, warn);
-        if key == 'hp' and YUI_BAR_OVERLAY then YUI_BAR_OVERLAY(x, by, w * math.max(0, math.min(1, v or 0)), bh, 2.2); end   -- YunaUI's HP bar overlay
-        if (key == 'hp' or key == 'mp') and YUI_BAR_OUTLINE then YUI_BAR_OUTLINE(dl, x, by, w, bh); end   -- (the thin black edge, HP and MP)
+        local golden = YUI_GOLDEN_BAR and YUI_GOLDEN_BAR(dl, x, by, w, bh, v, lag, d[2], d[3], d[5] * 1.7 + 0.4, warn);
+        if not golden then
+            JOBS.ybar(dl, x, by, w, bh, v, lag, d[2], d[3], d[5] * 1.7 + 0.4, warn);
+            if key == 'hp' and YUI_BAR_OVERLAY then YUI_BAR_OVERLAY(x, by, w * math.max(0, math.min(1, v or 0)), bh, 2.2); end   -- YunaUI's HP bar overlay
+            if (key == 'hp' or key == 'mp') and YUI_BAR_OUTLINE then YUI_BAR_OUTLINE(dl, x, by, w, bh); end   -- (the thin black edge, HP and MP)
+        end
         YUI_EQ_BARPOS = YUI_EQ_BARPOS or {};                         -- where this bar is (YunaUI's gear strip sits under one)
         YUI_EQ_BARPOS[key] = { x, by + bh, w, now, sc, tonumber(cfg.sb_anchor) or 0 };   -- (6: how the bars are anchored)
         if key == 'tp' and YUI_TP_FX then pcall(YUI_TP_FX, x, by, w, bh, v, tonumber(value) or 0); end   -- (YunaUI's TP bar effect, Vex mode)

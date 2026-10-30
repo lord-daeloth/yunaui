@@ -22,3 +22,6 @@ mapsimg_new_*.txt
 
 # /yui menuwatch test output
 menu_dump.txt
+
+# Python regression test cache
+__pycache__/

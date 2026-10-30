@@ -115,7 +115,7 @@ local defaults = T{
     chat3 = false, chat3_x = -1, chat3_y = -1, chat3_w = 460, chat3_h = 260, c3_tell = true, c3_ls = true, c3_ls2 = true,
     c3_party = false, c3_say = false, c3_shout = false, c3_unity = false,
     cm_tell = true, cm_ls = true, cm_ls2 = true, cm_party = true, cm_say = true, cm_shout = true, cm_unity = true,
-    chat_fade = true, spine_edge_anim = 'shine', card_shape = 'blade', card_theme = 'pearl', card_fx = 'sheen', card_low = true, mb_scale = 1.0, tag_look = 'role', target_buff_scale = 1.0, target_name_scale = 1.0, ecast_font = 1.0, target_look = 'dd2', spine_line = true, ecast_scale = 0.75, spine_trace = true, card_style = 'clean', bracket_look = 'glass', card_h = 1.0, fan_scale = 1.0, hp_outline = true, target_hp_color = 'pink', party_look = 'spine', spine_edge = 'thin', spine_edge_col = 'black', ally1_icon = 1.0, ally2_icon = 1.0, ally_anchor = false, ally_select_fx = 'chroma', ally_style = 'full', ally_smart_hp = 75, strip_show = true, hp_color = 'pink', fight_info = true, fan_layout = 'fan', fan_shape = 'blade', fan_accent = 'slash', fan_tint = 'dark', target_bar_h = 4, fan_place = 'bar', ecast_place = 'bar', fan_x = -1, fan_y = -1, ecast_x = -1, ecast_y = -1, buffs_off = {}, party_bar_h = 3, party_vgap = 0, chat_save = false, chat_gap = 6, chat_outline = 'outline', chat_ground = true, chat_ground_a = 0.5, chat_linebg = true, party_dim_far = true, party_range = 20.8, party_dist = true, party_buff_side = 'left', party_buff_row = 8, exp_text = 1.0, target_fx = 'blade', minimap = true, map_size = 220, map_zoom = 60, map_mobs = true, bigmap_size = 640, map_color = 'white', map_title = 'fade', map3d_size = 560, map_style = '2d', map3d_follow = true, map_ground = 'none', map_replace = false, map_arrow_color = 'lines', map_lines = 'hp', chat_time_dim = true, chat_hold = 12, chat_bright = 1.0, chat_tab = 1, chat_anim = true, chat_feed = true, chat_bubbles = true, chat_fade_old = true, chat_f_others = true, chat_f_debuff = true, chat_f_wear = true, cf_w_me = true, cf_w_party = true, cf_w_alliance = true, cf_w_trust = true, cf_w_monster = true, cf_w_npc = true, cf_t_melee = true, cf_t_ranged = true, cf_t_magic = true, cf_t_uses = true, cf_t_healing = true, cf_t_defence = true, cf_t_effects = true, cf_t_items = true, cf_cols = false, party_zone = true, loot_win = true, loot_scale = 1.0, loot_coin_scale = 1.0, chat_time_sec = false, chat_time_12 = false, chat_time_case = 'lower', target_bar_anim = true, map_hub = false, chat_look = 'clear', head_bars = 'fixed', head_fight = false, head_bars_scale = 1.0, head_bars_y = 0, head_nums = 'always', hl_path = 'elbow', hl_line = 'neon', hl_lcol = 'match', hl_lw = 0.6, hl_rest = 'hide', hl_pulse = false, hl_head = 'none', hl_icon = 'diamond', hl_isz = 0.65, hl_mcol = 'gold', hl_fcol = 'mint', hl_ianim = 'pulse', hl_fan = 0.8, show_fan = true, show_mb = true, hl_pct = 1.0, hl_cast = 0.8, hl_tot = 0.8, hl_hidename = true, hl_claim = true, map_tilt = true, party_buff_ffxi = true, party_tag_col = 'job', party_hp_th = 1.0, party_mp_th = 1.0, target_buff_tips = true, buff_timer_scale = 1.0, tp_sound = true, tp_sound_vol = 0.6, loot_voice = true, loot_voice_vol = 0.8, tarrow = true, macrobar = true, mb_show = 'hold', mb_always = false, mb_pad = 'hold', mb_btn = 'l2', mb_scale = 1.0, mb_look = 'strip', mb_style = 'cards', hp_by_job = false, mb_timers = true, mb_wave = 'bars', mb_text = 1.0, mb_both = true, mb_frame = 'arc', mb_view = 'pills', mbp_x = -1, mbp_y = -1, mb_brush = 'all', mb_layout = 'lens', mb_wcol = 'gold', mb_nstyle = 'wave', mb_wavecol = 'job', mb_sound = true, mb_snd_vol = 0.6, mb_voice = true, mb_voice_vol = 0.8, mb_cards_at = 'feet', mb_dn = 'hd_circle', mb_dh = 'hd_sigil', mb_x = -1, mb_y = -1, mbs_x = -1, mbs_y = -1, mbc_x = -1, mbc_y = -1, chat_panel_a = 0.72, chat_msg_gap = 5,  map_dock = true, enemy_buff_scale = 1.0, enemy_buff_text = 1.0, chat_tab_reset = true, chat_rounds = true, hex_party = true, setup_done = false,
+    chat_fade = true, spine_edge_anim = 'shine', card_shape = 'blade', card_theme = 'pearl', card_fx = 'sheen', card_low = true, mb_scale = 1.0, tag_look = 'role', target_buff_scale = 1.0, target_name_scale = 1.0, ecast_font = 1.0, target_look = 'dd2', spine_line = true, ecast_scale = 0.75, spine_trace = true, card_style = 'clean', bracket_look = 'glass', card_h = 1.0, fan_scale = 1.0, hp_outline = true, target_hp_color = 'pink', party_look = 'spine', spine_edge = 'thin', spine_edge_col = 'black', ally1_icon = 1.0, ally2_icon = 1.0, ally_anchor = false, ally_select_fx = 'chroma', ally_style = 'full', ally_smart_hp = 75, strip_show = true, hp_color = 'pink', fight_info = true, fan_layout = 'fan', fan_shape = 'blade', fan_accent = 'slash', fan_tint = 'dark', target_bar_h = 4, fan_place = 'bar', ecast_place = 'bar', fan_x = -1, fan_y = -1, ecast_x = -1, ecast_y = -1, buffs_off = {}, party_bar_h = 3, party_vgap = 0, chat_save = false, chat_gap = 6, chat_outline = 'outline', chat_ground = true, chat_ground_a = 0.5, chat_linebg = true, party_dim_far = true, party_range = 20.8, party_dist = true, party_buff_side = 'left', party_buff_row = 8, exp_text = 1.0, target_fx = 'blade', minimap = true, map_size = 220, map_zoom = 60, map_mobs = true, bigmap_size = 640, map_color = 'white', map_title = 'fade', map3d_size = 560, map_style = '2d', map3d_follow = true, map_ground = 'none', map_replace = false, map_arrow_color = 'lines', map_lines = 'hp', chat_time_dim = true, chat_hold = 12, chat_bright = 1.0, chat_tab = 1, chat_anim = true, chat_feed = true, chat_bubbles = true, chat_fade_old = true, chat_f_others = true, chat_f_debuff = true, chat_f_wear = true, cf_w_me = true, cf_w_party = true, cf_w_alliance = true, cf_w_trust = true, cf_w_monster = true, cf_w_npc = true, cf_t_melee = true, cf_t_ranged = true, cf_t_magic = true, cf_t_uses = true, cf_t_healing = true, cf_t_defence = true, cf_t_effects = true, cf_t_items = true, cf_cols = false, party_zone = true, loot_win = true, loot_scale = 1.0, loot_coin_scale = 1.0, chat_time_sec = false, chat_time_12 = false, chat_time_case = 'lower', target_bar_anim = true, map_hub = false, chat_look = 'clear', head_bars = 'fixed', head_fight = false, head_bars_scale = 1.0, head_bars_y = 0, head_nums = 'always', hl_path = 'elbow', hl_line = 'neon', hl_lcol = 'match', hl_lw = 0.6, hl_rest = 'hide', hl_pulse = false, hl_head = 'none', hl_icon = 'diamond', hl_isz = 0.65, hl_mcol = 'gold', hl_fcol = 'mint', hl_ianim = 'pulse', hl_fan = 0.8, show_fan = true, show_mb = true, hl_pct = 1.0, hl_cast = 0.8, hl_tot = 0.8, hl_hidename = true, hl_claim = true, map_tilt = true, party_buff_ffxi = true, party_tag_col = 'job', party_hp_th = 1.0, party_mp_th = 1.0, target_buff_tips = true, buff_timer_scale = 1.0, tp_sound = true, tp_sound_vol = 0.6, loot_voice = true, loot_voice_vol = 0.8, tarrow = true, macrobar = true, mb_show = 'hold', mb_always = false, mb_pad = 'hold', mb_btn = 'l2', mb_scale = 1.0, mb_look = 'strip', mb_style = 'cards', hp_by_job = false, mb_timers = true, mb_wave = 'bars', mb_text = 1.0, mb_both = true, mb_frame = 'arc', mb_view = 'pills', mbp_x = -1, mbp_y = -1, mb_brush = 'all', mb_layout = 'lens', mb_wcol = 'gold', mb_nstyle = 'wave', mb_wavecol = 'job', mb_sound = true, mb_snd_vol = 0.6, mb_voice = true, mb_voice_vol = 0.8, mb_cards_at = 'feet', mb_dn = 'hd_circle', mb_dh = 'hd_sigil', mb_x = -1, mb_y = -1, mbs_x = -1, mbs_y = -1, mbc_x = -1, mbc_y = -1, chat_panel_a = 0.72, chat_msg_gap = 5,  map_dock = true, enemy_buff_scale = 1.0, enemy_buff_text = 1.0, chat_tab_reset = true, chat_rounds = true, hex_party = true, golden_vex = false, setup_done = false,
     hide_game_chat = true, chat_time = false, hide_game_input = false, chat_typing = true, min_anim = 'fly', dps_backdrop = 0.55, dps_title_b = 1.0, dps_detail_b = 1.0,
     target_scale = 1.0, party_scale = 1.0, alliance_scale = 1.0, buff_scale = 1.0,
     locked = false, panel_scale = 1.0, panel_alpha = 0.95, mini_x = -1, mini_y = -1,
@@ -679,7 +679,7 @@ local function title(dl, full)
             if i > 5 then
                 local u = 0.5 + 0.5 * math.sin(t * 1.2 - i * 0.45);
                 local a1, a2 = C.hp, C.mp2;
-                if cfg.target_fx == 'link' then a1, a2 = NEON, NEON2; end   -- (Hex link mode: gold)
+                if C.gold() then a1, a2 = NEON, NEON2; end   -- (Hex link mode: gold)
                 col = { a1[1] + (a2[1] - a1[1]) * u, a1[2] + (a2[2] - a1[2]) * u, a1[3] + (a2[3] - a1[3]) * u, 1 };
             end
             DL.T(dl, cx, y0, u32(col), ch);
@@ -1032,6 +1032,14 @@ function C.hexring(dl, x, y, r, col, th)                             -- (a hexag
     for k = 1, 6 do dl:AddLine(p_[k], p_[k % 6 + 1], col, th or 1); end
 end
 -- the same for YunaEquip's own HP bar ('Separate bars'), which lives in equip.lua
+YUI_GOLDEN_BAR = function(dl, x, y, w, h, v, lag, c1, c2, seed, warn)
+    if not cfg.golden_vex then return false; end
+    if warn and warn > 0 then
+        c1 = { c1[1] + (1 - c1[1]) * math.min(1, warn * 0.5), c1[2] * (1 - math.min(1, warn * 0.3)), c1[3] * (1 - math.min(1, warn * 0.3)) };
+    end
+    C.hexbar(dl, x, y, w, h, v, lag, seed, { c1 = c1, c2 = c2, live = true });
+    return true;
+end
 YUI_HIDE_STATBARS = function() return cfg.target_fx == 'link' and (cfg.head_bars or 'fixed') == 'head'; end   -- (equip.lua: BARS > Where = Over your head - Hex link mode only)
 YUI_BAR_OVERLAY = function(x, y, fw, h, seed) bar_overlay(x, y, fw, h, bar_fx_for('equip'), seed or 1, C.fxtint(cfg.my_hp_color or cfg.hp_color or 'pink')); end
 -- BARS > TP bar effect (Vex mode): from 1000 TP your TP bar crackles like the target bar, in gold (images/dd2tp) -
@@ -2413,6 +2421,7 @@ function FIGHT.fxdraw(st, x, top, by, w, h, sc)
     local e, cl, eo = st.e, FIGHT.fx_cl, FIGHT.fx_eo;
     local cx, cy = x + w / 2, by + h / 2;
     local pk, vi = C.hp, C.mp2;
+    if cfg.golden_vex then pk, vi = C.GOLDH2, C.GOLDH; end
     if st.kind == 'blade' then                                       -- the line of light, opening from the middle
         local L = (w / 2) * eo(e / 0.42);
         local la = (e < 0.45) and 1 or cl(1 - (e - 0.45) / 0.35);
@@ -3038,7 +3047,7 @@ function C.tfriend(dl, x, y, w, sc, idx, ent, name, hpp, tk, tmi, dt)
     end
     m.far = nil;                                                     -- (never faded here)
     local nohp = (tk == 'npc');                                      -- (NPCs and objects have no HP worth showing: no bars)
-    local col = C.TFRIEND[tk] or C.TFRIEND.pc;
+    local col = cfg.golden_vex and C.GOLDH or (C.TFRIEND[tk] or C.TFRIEND.pc);
     -- Laid out before anything is drawn, so nothing ever overlaps at any size or resolution: on one line when it fits
     -- (the bars may shrink a little first), else on two - the tag, name and distance on top, HP and MP under them.
     -- On either line the distance goes, then the name is shortened with "...", before anything could touch.
@@ -3129,6 +3138,11 @@ function C.tfriend(dl, x, y, w, sc, idx, ent, name, hpp, tk, tmi, dt)
     local function bar(bx, label, lw, v, bw, c)                      -- a label, then its bar; gives back where it ends
         text(dl, bx, by_ - sh / 2, label, { 0.97, 0.96, 1, 1 });
         bx = bx + lw + g1;
+        if cfg.golden_vex then
+            local colors = label == 'MP' and C.HEXMP or C.HEXHP;
+            C.hexbar(dl, bx, by_ - bh / 2, bw, bh, v, v, 0.5, { c1 = colors[1], c2 = colors[2], live = true, band = bh });
+            return bx + bw;
+        end
         DL.RF(dl, bx - 1, by_ - bh / 2 - 1, bx + bw + 1, by_ + bh / 2 + 1, U4(0, 0, 0, 0.9), 2);
         DL.RF(dl, bx, by_ - bh / 2, bx + bw, by_ + bh / 2, U4(0.16, 0.15, 0.21, 1), 2);
         DL.RF(dl, bx, by_ - bh / 2, bx + bw * math.max(0, math.min(1, v)), by_ + bh / 2, U4(c[1], c[2], c[3], 1), 2);
@@ -3295,7 +3309,9 @@ local function draw_target(dt)
             local pa = bal < 1;
             if pa then imgui.PushStyleVar(ImGuiStyleVar_Alpha, math.max(0.01, bal * fa_)); end
             if bw >= 2 and bal > 0.01 then
-                if link then                                         -- (Hex link: its own bar, a stretched hexagon)
+                if cfg.golden_vex then
+                    C.hexbar(dl, bx, by, bw, h, hpp * hk, lg * hk, 0.5, { live = true });
+                elseif link then                                     -- (Hex link: its own bar, a stretched hexagon)
                     local cc_ = (cfg.hl_claim ~= false) and C.claimcol(idx, fake) or nil;   -- (TARGET > Claim colour)
                     if tk ~= 'mob' then                              -- (a friend: a neutral silver-white bar - colour on a target bar means an enemy and whose it is)
                         cc_ = { { 0.62, 0.64, 0.70 }, { 0.96, 0.97, 1.00 } };
@@ -7137,7 +7153,7 @@ function C.mb_strip(dl, cx, top, sc, row, sel, now, op, cds, nm)
     local M = C.MB;
     local ts = math.max(0.6, math.min(2.5, tonumber(cfg.mb_text) or 1));   -- (ACTION BARS > Text size)
     local s_ = sc;
-    local hex = cfg.target_fx == 'link';
+    local hex = C.gold();
     local AC = hex and (C.GOLDH or { 1.0, 0.76, 0.34 }) or { 0.72, 0.50, 1.00 };
     local AL = hex and (C.GOLDH2 or { 1.0, 0.90, 0.62 }) or { 0.90, 0.80, 1.00 };
     local ORG = hex and { 1.0, 0.66, 0.24 } or { 1.0, 0.55, 0.88 };
@@ -7336,8 +7352,8 @@ function C.mb_pillbar(row, sel, now, op, cds, nm, sc)
     local hex = true;                                                -- (both modes: Hex link's slanted buttons and layout - Vex mode in black and white)
     local GOLD, GL, DK = { 1.0, 0.82, 0.42 }, { 1.0, 0.90, 0.62 }, { 0.79, 0.65, 0.35 };
     local CDC = { 1.0, 0.62, 0.22 };                                 -- (a macro on recast: amber - no pink in YunaUI's gold)
-    if cfg.target_fx ~= 'link' then GOLD, GL, DK, CDC = { 0.90, 0.90, 0.93 }, { 1.00, 1.00, 1.00 }, { 0.46, 0.46, 0.52 }, { 0.68, 0.68, 0.74 }; end   -- (Vex mode: white, light and dark grey - the gold's places)
-    local ACC = (cfg.target_fx ~= 'link') and { 1.00, 0.34, 0.68 } or GOLD;   -- (the pick and the held row: Vex mode's deep pink, as the HP bar - gold in Hex link)
+    if not C.gold() then GOLD, GL, DK, CDC = { 0.90, 0.90, 0.93 }, { 1.00, 1.00, 1.00 }, { 0.46, 0.46, 0.52 }, { 0.68, 0.68, 0.74 }; end   -- (Vex mode: white, light and dark grey - the gold's places)
+    local ACC = (not C.gold()) and { 1.00, 0.34, 0.68 } or GOLD;   -- (the pick and the held row: Vex mode's deep pink, as the HP bar - gold in Hex link)
     local NP, NV = { 1.00, 0.36, 0.62 }, { 0.66, 0.30, 1.00 };       -- (Normal mode's neon: the target bar's pink to violet)
     local function capsule(xc_, yc_, hw_, hh_)                       -- (Normal mode's pill: upright, its ends round - clockwise from its foot's left)
         local pts, r = {}, hh_;
@@ -7347,7 +7363,7 @@ function C.mb_pillbar(row, sel, now, op, cds, nm, sc)
         return pts;
     end
     local VIO = hex and GOLD or { 0.62, 0.40, 1.00 };                -- (the gradient's foot: gold in Hex link, violet in Normal mode)
-    local DOT = (cfg.target_fx ~= 'link') and { 0.55, 0.82, 1.00 } or GOLD;   -- (the ready dot: gold in Hex link, Vex mode's lucent blue as its edges)
+    local DOT = (not C.gold()) and { 0.55, 0.82, 1.00 } or GOLD;   -- (the ready dot: gold in Hex link, Vex mode's lucent blue as its edges)
     local function mix(c1, c2, u) return { c1[1] + (c2[1] - c1[1]) * u, c1[2] + (c2[2] - c1[2]) * u, c1[3] + (c2[3] - c1[3]) * u }; end
     local WH, DIM = { 1, 1, 1 }, { 0.70, 0.70, 0.74 };
     local function cl01(u) return math.max(0, math.min(1, u)); end
@@ -7513,7 +7529,7 @@ function C.mb_pillbar(row, sel, now, op, cds, nm, sc)
                 end
             end
             local ec, ea, ew = DK, 0.45, 1;
-            local vexo = cfg.target_fx ~= 'link';
+            local vexo = not C.gold();
             if vexo then                                             -- (Vex mode: lucent blue edges - a light running along the bar now and then)
                 local wave = math.max(0, math.sin(now * 1.4 - k * 0.45)) ^ 6;
                 ec, ea = { 0.42 + 0.40 * wave, 0.74 + 0.18 * wave, 1.00 }, 0.70 + 0.30 * wave;
@@ -7548,7 +7564,7 @@ function C.mb_pillbar(row, sel, now, op, cds, nm, sc)
                     local ty = math.floor(yc - hh);
                     local xa, xb = p[1][1] + 3, p[2][1] - 3;
                     local xm = (xa + xb) / 2;
-                    local tl = (cfg.target_fx ~= 'link') and { 1.00, 0.62, 0.82 } or { 1, 0.97, 0.86 };   -- (its top light: pink-white in Vex mode, cream in Hex link)
+                    local tl = (not C.gold()) and { 1.00, 0.62, 0.82 } or { 1, 0.97, 0.86 };   -- (its top light: pink-white in Vex mode, cream in Hex link)
                     local c0, c1 = U4(tl[1], tl[2], tl[3], 0), U4(tl[1], tl[2], tl[3], 0.95 * a);
                     DL.RFM(dl, xa, ty, xm, ty + 1, c0, c1, c1, c0);
                     DL.RFM(dl, xm, ty, xb, ty + 1, c1, c0, c0, c1);
@@ -7665,7 +7681,7 @@ function C.mb_cockpit(dl, cx, ymid, sc, row, sel, now, op, cds, nm)
     local M = C.MB;
     local ts = math.max(0.6, math.min(2.5, tonumber(cfg.mb_text) or 1));   -- (ACTION BARS > Text size)
     local s_ = sc;
-    local hex = cfg.target_fx == 'link';
+    local hex = C.gold();
     local AC = hex and (C.GOLDH or { 1.0, 0.76, 0.34 }) or { 0.72, 0.50, 1.00 };   -- (Hex link gold / Normal violet)
     local AL = hex and (C.GOLDH2 or { 1.0, 0.90, 0.62 }) or { 0.90, 0.80, 1.00 };  -- (lit)
     local ORG = hex and { 1.0, 0.66, 0.24 } or { 1.0, 0.55, 0.88 };
@@ -7936,7 +7952,7 @@ function C.mb_fan(dl, cx, top, sc, row, sel, now, op, cds, nm)
     local s_ = sc * ts;
     local rose, gold, WH, ORG = { 1.0, 0.42, 0.62 }, { 1.0, 0.82, 0.42 }, { 1, 1, 1 }, { 1.0, 0.58, 0.26 };
     local PK = { 1, 0.90, 0.62 };                                    -- (the pick's name)
-    if cfg.target_fx == 'link' then rose = C.GOLDH or { 1.0, 0.76, 0.34 }; gold = C.GOLDH2 or { 1.0, 0.90, 0.62 };   -- (Hex link: its gold, never the rose / violet)
+    if C.gold() then rose = C.GOLDH or { 1.0, 0.76, 0.34 }; gold = C.GOLDH2 or { 1.0, 0.90, 0.62 };   -- (Hex link: its gold, never the rose / violet)
     else rose, gold, ORG, PK = { 0.72, 0.50, 1.00 }, { 0.86, 0.74, 1.00 }, { 1.0, 0.55, 0.88 }, { 1.0, 0.45, 0.86 }; end   -- (Normal mode: its violet and pink - the pick in its neon pink, it stands out)
     local function cl01(u) return math.max(0, math.min(1, u)); end
     local function c32(c, a) return U4(c[1], c[2], c[3], cl01(a)); end
@@ -11763,7 +11779,7 @@ local function draw_strip()
                     local o_ = math.max(1, math.floor(1.5 * sc + 0.5));
                     local x0_, y0_, x1_, y1_ = math.floor(sx) - o_, math.floor(sy) - o_, math.floor(sx + S) + o_, math.floor(sy + S) + o_;
                     local lit_, mid_, dk_ = U4(1.00, 0.95, 0.72, 0.95 * ga), U4(0.92, 0.72, 0.30, 0.95 * ga), U4(0.55, 0.38, 0.10, 0.95 * ga);
-                    if cfg.target_fx ~= 'link' then                  -- (Vex: softer - a fine rounded white line with a faint glow, no bevel)
+                    if not C.gold() then                  -- (Vex: softer - a fine rounded white line with a faint glow, no bevel)
                         local rr_ = math.max(3, 5 * sc);
                         for g = 3, 1, -1 do DL.R(dl, sx - g, sy - g, sx + S + g, sy + S + g, U4(1, 1, 1, 0.12 * ga), rr_ + g, allc, 2); end
                         DL.R(dl, sx, sy, sx + S, sy + S, U4(1, 1, 1, 1.0 * ga), rr_, allc, math.max(1.5, 1.6 * sc));
@@ -13578,6 +13594,7 @@ function LAYOUT.capture()                                            -- where ev
 end
 function LAYOUT.save_mine(n)
     local t = LAYOUT.capture();
+    t.mode = C.mode();
     t.link = cfg.target_fx == 'link';                                -- (the mode it was saved in: loading it goes back to that mode)
     local all = {};
     if type(cfg.layouts) == 'table' then for k, v in pairs(cfg.layouts) do all[k] = v; end end
@@ -13593,7 +13610,7 @@ function LAYOUT.load_mine(n)
     for k, v in pairs(t.o or {}) do o[k] = v; end
     local eq = {};
     for k, v in pairs(t.eq or {}) do eq[k] = v; end
-    if t.link ~= nil and (t.link == true) ~= (cfg.target_fx == 'link') then pcall(C.setmode, t.link == true); end   -- (its own mode first: Normal or Hex link)
+    if t.mode ~= nil or t.link ~= nil then C.setmode(t.mode or (t.link and 'hex' or 'vex')); end   -- (its own mode first: Normal or Hex link)
     LAYOUT.apply(o, eq, (type(t.dps) == 'table' and t.dps[1]) and t.dps or nil);
     LAYOUT.msg = 'Loaded: ' .. (LAYOUT.name(n) or ('Layout ' .. n)) .. '.';
 end
@@ -13672,7 +13689,7 @@ function LAYOUT.share_pack()                                         -- (what go
     local eq = YUI_EQ_GET and LAYOUT.plain(YUI_EQ_GET()) or nil;
     local ds = YUI_DPS and YUI_DPS.get and LAYOUT.plain(YUI_DPS.get()) or nil;
     if ds then ds.visible, ds.minimized, ds.last_dps = nil, nil, nil; end
-    return { v = 1, sw = W, sh = H, link = cfg.target_fx == 'link', cfg = o, eq = eq, dps = ds };
+    return { v = 1, sw = W, sh = H, mode = C.mode(), link = cfg.target_fx == 'link', cfg = o, eq = eq, dps = ds };
 end
 function LAYOUT.share_code() return 'YUI1:' .. LAYOUT.b64(LAYOUT.ser(LAYOUT.share_pack())); end
 function LAYOUT.clip_ffi()
@@ -13748,7 +13765,7 @@ function LAYOUT.share_apply(pk, undo)
     local W, H = C.screen();
     local fx, fy = W / math.max(1, tonumber(pk.sw) or W), H / math.max(1, tonumber(pk.sh) or H);
     if not undo then cfg.share_backup = LAYOUT.ser(LAYOUT.share_pack()); end   -- (what you had: UNDO LAST IMPORT)
-    if pk.link ~= nil and (pk.link == true) ~= (cfg.target_fx == 'link') then pcall(C.setmode, pk.link == true); end
+    if pk.mode ~= nil or pk.link ~= nil then C.setmode(pk.mode or (pk.link and 'hex' or 'vex')); end
     if undo then                                                     -- (undo: the settings the import changed go back to their defaults first)
         local back = {};
         for k in pairs(pk.cfg or {}) do back[k] = true; end
@@ -13865,8 +13882,8 @@ function PANEL.split()
     imgui.SetCursorScreenPos({ PANEL.cx2, PANEL.top });
     imgui.PushTextWrapPos(imgui.GetCursorPosX() + ROW_W);
 end
--- The two modes (the switch at the top of the panel, and the first-run chooser): Normal - YunaUI's own look; Hex link -
--- the target bar over the target's head with a line to it, hexagon bars, the skillchain banner at the top
+-- Modes keep separate layouts. Golden Vex shares Hex Link's styling while retaining Vex's fixed bars.
+-- target_fx == 'link' controls overhead placement; C.gold()/YUI_HEX control the gold appearance.
 C.MODEKEYS = { 'target_scale', 'target_name_scale', 'target_w', 'target_bar_h', 'target_buff_scale', 'sub_w',
                'head_bars', 'head_bars_scale', 'head_bars_y', 'head_nums', 'target_x', 'target_y' };
 function C.modekeys()                                                -- (the sizes, the target bar's place and its pieces' places)
@@ -13876,7 +13893,20 @@ function C.modekeys()                                                -- (the siz
     return K;
 end
 C.MODE_STAY = { win_x = true, md_x = true, modesw_x = true };       -- (the panel, the chooser and the switch itself: where they are)
-function C.modesave(link)                                            -- (this mode's sizes and its whole layout, kept: cfg.ms_hex / cfg.ms_norm)
+function C.mode()
+    return cfg.target_fx == 'link' and 'hex' or (cfg.golden_vex and 'golden' or 'vex');
+end
+function C.modeid(mode)
+    if mode == true or mode == 'hex' then return 'hex'; end
+    return mode == 'golden' and 'golden' or 'vex';
+end
+function C.modekey(mode)
+    return ({ vex = 'ms_norm', hex = 'ms_hex', golden = 'ms_golden' })[C.modeid(mode)];
+end
+function C.gold()
+    return cfg.target_fx == 'link' or cfg.golden_vex == true;
+end
+function C.modesave(link)                                            -- (each mode's sizes and layout: ms_hex / ms_norm / ms_golden)
     local t = {};
     for _, k in ipairs(C.modekeys()) do t[k] = cfg[k]; end
     local pos = {};                                                  -- (every window's place: any key_x with its key_y, the pieces' _dx / _dy)
@@ -13896,10 +13926,10 @@ function C.modesave(link)                                            -- (this mo
     end
     local ds = YUI_DPS and YUI_DPS.get and YUI_DPS.get() or nil;     -- (the Damage Meter)
     if ds and tonumber(ds.x) and tonumber(ds.y) then t.dps = { tonumber(ds.x), tonumber(ds.y) }; end
-    cfg[link and 'ms_hex' or 'ms_norm'] = t;
+    cfg[C.modekey(link)] = t;
 end
 function C.modeload(link)                                            -- (that mode's, if it has some kept; true: its target bar place too)
-    local t = cfg[link and 'ms_hex' or 'ms_norm'];
+    local t = cfg[C.modekey(link)];
     if type(t) ~= 'table' then return false; end
     for _, k in ipairs(C.modekeys()) do if t[k] ~= nil then cfg[k] = t[k]; end end
     if type(t.pos) == 'table' then                                   -- (its whole layout back - kept since the per-mode layouts)
@@ -13912,9 +13942,18 @@ function C.modeload(link)                                            -- (that mo
     return t.target_x ~= nil and t.target_y ~= nil;
 end
 function C.setmode(link)
-    local was = cfg.target_fx == 'link';
+    local mode = C.modeid(link);
+    local previous = C.mode();
+    local was = previous == 'hex';
+    link = mode == 'hex';
     local placed = false;
-    if was ~= link then C.modesave(was); placed = C.modeload(link); end   -- (each mode with its own sizes and target bar place)
+    if previous ~= mode then
+        C.modesave(previous);
+        placed = C.modeload(mode);
+        if not placed and mode == 'golden' then placed = C.modeload('vex'); end
+    end
+    cfg.golden_vex = mode == 'golden';
+    cfg.head_bars = link and 'head' or 'fixed';   -- (each mode with its own sizes and target bar place)
     if link then
         if cfg.target_fx ~= 'link' then cfg.std_fx = cfg.target_fx; end
         cfg.target_fx = 'link';
@@ -13933,6 +13972,7 @@ function C.setmode(link)
             for _, pc in ipairs(FIGHT.PIECES) do cfg[pc[1] .. '_dx'], cfg[pc[1] .. '_dy'] = 0, 0; end   -- (name, Magic Burst, fan, cast: back on the bar)
         end
     end
+    if C.apply_hp then C.apply_hp(); end
     save();
 end
 C.GOLDH, C.GOLDH2 = { 1.0, 0.76, 0.34 }, { 1.0, 0.90, 0.62 };   -- (Hex link's gold: C fields, for code above PANEL)
@@ -13943,21 +13983,22 @@ end
 function PANEL.modes(dl, x, y)                                       -- NORMAL MODE | HEX LINK MODE, top of the panel
     if YUI_PUBLIC then return; end                                   -- (the public version: Normal mode only)
     local ps = C.ps;
-    local HX = cfg.target_fx == 'link';
+    local mode = C.mode();
     imgui.SetWindowFontScale(C.wfs * 0.8);
-    local labels = { 'VEX MODE', 'HEX LINK MODE' };
+    local labels = { 'VEX', 'HEX LINK', 'GOLDEN VEX' };
     local sp = 2 * ps;
-    local bw = math.floor(math.max(spaced_w(labels[1], sp), spaced_w(labels[2], sp)) + 34 * ps);
+    local bw = math.floor(math.max(spaced_w(labels[1], sp), spaced_w(labels[2], sp), spaced_w(labels[3], sp)) + 34 * ps);
     local bh = math.floor(26 * ps);
     local _, th = imgui.CalcTextSize('A');
     local mx, my = imgui.GetMousePos();
-    for i = 1, 2 do
+    for i = 1, 3 do
         local bx = x + (i - 1) * bw;
-        local on = (i == 2) == HX;
+        local choice = ({ 'vex', 'hex', 'golden' })[i];
+        local on = mode == choice;
         local over = mx >= bx and mx < bx + bw and my >= y and my < y + bh;
-        local ac = (i == 2) and PANEL.GOLD or C.normcol(2);
-        local ac2 = (i == 2) and PANEL.GOLD2 or C.normcol(3);
-        if i == 2 then                                               -- (Hex link's half: hexagon ends)
+        local ac = (i ~= 1) and PANEL.GOLD or C.normcol(2);
+        local ac2 = (i ~= 1) and PANEL.GOLD2 or C.normcol(3);
+        if i ~= 1 then                                               -- (Hex link's half: hexagon ends)
             local c = bh / 2;
             local pts = { { bx, y }, { bx + bw - c, y }, { bx + bw, y + c }, { bx + bw - c, y + bh }, { bx, y + bh } };
             local fill = u32(on and { ac[1], ac[2], ac[3], 0.22 } or (over and { 1, 1, 1, 0.06 } or { 0.10, 0.09, 0.13, 1 }));
@@ -13972,8 +14013,8 @@ function PANEL.modes(dl, x, y)                                       -- NORMAL M
         local lw = spaced_w(labels[i], sp);
         spaced(dl, bx + (bw - lw) / 2, y + (bh - th) / 2, labels[i], u32(on and { 1, 1, 1, 1 } or (over and C.text or C.muted)), sp);
         imgui.SetCursorScreenPos({ bx, y });
-        if imgui.InvisibleButton('##yui_mode' .. i, { bw, bh }) and not on then C.setmode(i == 2); end
-        if over then YUI_TIP((i == 2) and 'Hex link: the target bar over its head with a line to it, hexagon bars, the skillchain banner at the top.' or 'Vex: the YunaUI target bar, skillchain fan and Magic Burst card.'); end
+        if imgui.InvisibleButton('##yui_mode' .. i, { bw, bh }) and not on then C.setmode(choice); end
+        if over then YUI_TIP((i == 3) and 'Golden Vex: gold styling with fixed player and target bars.' or (i == 2) and 'Hex link: the target bar over its head with a line to it, hexagon bars, the skillchain banner at the top.' or 'Vex: the YunaUI target bar, skillchain fan and Magic Burst card.'); end
     end
     imgui.SetWindowFontScale(C.wfs);
 end
@@ -14014,7 +14055,7 @@ function PANEL.hexframe(dl, x, y, w, h, SW)                          -- Hex link
     end
 end
 function PANEL.frame(dl, x, y, w, h, SW)                         -- rounded, with a soft violet glow all round
-    if cfg.target_fx == 'link' then return PANEL.hexframe(dl, x, y, w, h, SW); end
+    if C.gold() then return PANEL.hexframe(dl, x, y, w, h, SW); end
     local ps = C.ps;
     local r = 30 * ps;
     x, y, w, h = x + 5, y + 5, w - 10, h - 10;
@@ -14076,13 +14117,13 @@ function PANEL.sidebar(dl, x0, y0, SW, bottom)
         local on = (ui.tab or 1) == k;
         local over = mx >= x0 and mx < x0 + SW and my >= y and my < y + ih;
         if on then
-            local A1 = (cfg.target_fx == 'link') and PANEL.GOLD or NEON;     -- (Hex link mode: gold, and a hexagon for the marker)
-            local A2 = (cfg.target_fx == 'link') and PANEL.GOLD2 or NEON2;
+            local A1 = (C.gold()) and PANEL.GOLD or NEON;     -- (Hex link mode: gold, and a hexagon for the marker)
+            local A2 = (C.gold()) and PANEL.GOLD2 or NEON2;
             pcall(function()
                 DL.RFM(dl, x0, y, x0 + SW, y + ih, U4(A1[1], A1[2], A1[3], 0.30), U4(A1[1], A1[2], A1[3], 0), U4(A1[1], A1[2], A1[3], 0), U4(A1[1], A1[2], A1[3], 0.30));
                 DL.RFM(dl, x0, y + ih - 2, x0 + SW, y + ih, U4(A2[1], A2[2], A2[3], 1), U4(A2[1], A2[2], A2[3], 0), U4(A2[1], A2[2], A2[3], 0), U4(A2[1], A2[2], A2[3], 1));
             end);
-            if cfg.target_fx == 'link' then C.hexdot(dl, x0 + 6 * ps, y + ih / 2, 4 * ps, U4(A2[1], A2[2], A2[3], 1));
+            if C.gold() then C.hexdot(dl, x0 + 6 * ps, y + ih / 2, 4 * ps, U4(A2[1], A2[2], A2[3], 1));
             else DL.RF(dl, x0, y, x0 + 3, y + ih, U4(0.92, 0.80, 1, 1)); end
         elseif over then
             DL.RF(dl, x0, y, x0 + SW, y + ih, U4(1, 1, 1, 0.04));
@@ -14107,7 +14148,7 @@ function PANEL.sidebar(dl, x0, y0, SW, bottom)
             local mx_, my_ = imgui.GetMousePos();
             local over = mx_ >= x0 + 20 * ps and mx_ <= x0 + 20 * ps + bw and my_ >= top and my_ <= top + lh;
             local b1, b2, b3 = C.hp2, C.hp, C.mp2;
-            if cfg.target_fx == 'link' then b1, b2, b3 = NEON2, NEON, NEON2; end   -- (Hex link mode: gold)
+            if C.gold() then b1, b2, b3 = NEON2, NEON, NEON2; end   -- (Hex link mode: gold)
             DL.T(dl, x0 + 20 * ps, top, U4(b1[1], b1[2], b1[3], over and 1 or 0.85), 'BETA TESTERS');
             pcall(function() DL.RFM(dl, x0 + 20 * ps, top + lh + 1, x0 + 20 * ps + bw, top + lh + 2, u32(b2), U4(b3[1], b3[2], b3[3], 0), U4(b3[1], b3[2], b3[3], 0), u32(b2)); end);
             if over then YUI_TIP('Thank you to our beta testers:\n' .. table.concat(PANEL.TESTERS, '\n')); end
@@ -14287,6 +14328,7 @@ function C.modesw()
     local x, y = imgui.GetCursorScreenPos();
     imgui.InvisibleButton('##yui_modesw_b', { tw, th });
     local hov = imgui.IsItemHovered();
+    if hov then YUI_TIP(({ vex = 'Vex', golden = 'Golden Vex', hex = 'Hex Link' })[C.mode()] .. ': click to cycle Vex / Golden Vex / Hex Link.'); end
     local mx, my = imgui.GetMousePos();
     if imgui.IsItemClicked(0) then M.down = { mx, my }; end
     if imgui.IsItemActive() and not cfg.locked and not stuck then    -- (dragged by itself - not while it sits on the chat)
@@ -14299,34 +14341,37 @@ function C.modesw()
     end
     if M.down and not imgui.IsMouseDown(0) then                      -- (a click, not a drag: the other mode)
         if math.abs(mx - M.down[1]) + math.abs(my - M.down[2]) < 5 and not M.t0 then
-            M.t0, M.to, M.done = os.clock(), cfg.target_fx ~= 'link', false;
-            if cfg.mode_snd ~= false then pcall(C.snd_play, M.to and 'mode_hex' or 'mode_vex', 'mode_snd_vol'); end   -- (into Hex link: a sci-fi click; into Vex mode: a soft air whoosh - Pixabay)
+            M.t0, M.to, M.done = os.clock(), ({ vex = 'golden', golden = 'hex', hex = 'vex' })[C.mode()], false;
+            if cfg.mode_snd ~= false then pcall(C.snd_play, (M.to ~= 'vex') and 'mode_hex' or 'mode_vex', 'mode_snd_vol'); end   -- (into Hex link: a sci-fi click; into Vex mode: a soft air whoosh - Pixabay)
         end
         M.down = nil;
     end
     local now = os.clock();                                          -- (YUNA UI - its UI pink in Vex mode, gold in Hex link; a click turns it over like a card,
     local cx, cy = x + tw / 2, y + th / 2;                           --  the other mode on its back)
-    local link = (cfg.target_fx == 'link') ~= (M.dside == true);     -- (the guide's slide: its back side showing)
+    local link = C.gold() ~= (M.dside == true);     -- (the guide's slide: its back side showing)
     local cs, s_, flash = 1, 0, 0;
     if M.t0 then
         local e = math.min(1, (now - M.t0) / 0.6);
         local ang = (1 - (1 - e) ^ 2) * math.pi;                     -- (fast, settling at the end)
         if ang >= math.pi / 2 and not M.done then
             M.done = true;
-            if M.demo then M.dside = not M.dside; else pcall(C.setmode, M.to); pcall(C.mt_start, M.to); end
-            link = (cfg.target_fx == 'link') ~= (M.dside == true);
+            if M.demo then M.dside = not M.dside; else pcall(C.setmode, M.to); pcall(C.mt_start, M.to ~= 'vex'); end
+            link = C.gold() ~= (M.dside == true);
         end
         cs, s_ = math.abs(math.cos(ang)), math.sin(ang);
         if M.done then flash = 1 - e; end
         if e >= 1 then M.t0, M.demo = nil, (M.demo and gs) or nil; cs, s_ = 1, 0; end
     end
-    local gi = C.mip(link and 'modetext_hex' or 'modetext_vex', th / 90);   -- (turning: the picture, a smoothly shrunk copy near its size)
+    local image_mode = C.mode();
+    if M.dside then image_mode = C.gold() and 'vex' or 'hex'; end   -- (the guide's alternate face, without changing the active mode)
+    local image_name = ({ vex = 'modetext_vex', golden = 'modetext_vexg', hex = 'modetext_hex' })[image_mode];
+    local gi = C.mip(image_name, th / 90);   -- (selects the matching _q, _t or _h image for this size)
     if flash > 0 then                                                -- (the new colour glowing behind it as it lands)
         local gt = tex('brush/glow_round.png');
         local c = link and { 1.0, 0.82, 0.42 } or { 1.0, 0.43, 0.72 };
         if gt then pcall(function() DL.I(dl, gt.ptr, cx - tw * 0.75, cy - th * 1.6, cx + tw * 0.75, cy + th * 1.6, 0, 0, 1, 1, U4(c[1], c[2], c[3], 0.55 * flash)); end); end
     end
-    local still = (M.t0 == nil) and fonts.title ~= nil and YUI_NEWFONT(fonts.title);   -- (still: real text in the font - sharp at any size)
+    local still = (M.t0 == nil) and not (image_mode == 'golden' and gi) and fonts.title ~= nil and YUI_NEWFONT(fonts.title);   -- (Golden Vex keeps its custom artwork visible while idle)
     if still then
         local str = 'YUNA UI';
         local function width_at(px_)                                 -- (its width at a size, letters spaced a little)
@@ -14573,6 +14618,13 @@ local function draw_window()
         local function hint(s) imgui.TextColored(C.muted, s); end
         if tab == 1 then
             ------------------------------------------------------------------ GENERAL
+            section('MODE');
+            for i, mode in ipairs({ 'vex', 'golden', 'hex' }) do
+                if i > 1 then imgui.SameLine(0, 8); end
+                local label = ({ vex = 'VEX', golden = 'GOLDEN VEX', hex = 'HEX LINK' })[mode];
+                if accent_button(label .. '##yui_style_' .. mode, { math.floor((ROW_W - 16) / 3), 0 }, C.mode() ~= mode, true) then C.setmode(mode); end
+            end
+            hint('Golden Vex: gold and azure, angular frames, and fixed player and target bars.');
             section('LAYOUT');
             do
                 local bw3 = math.floor((ROW_W - 16) / 3);
@@ -14621,7 +14673,7 @@ local function draw_window()
                 if cfg.mode_icon_size == nil then cfg.mode_icon_size = 1.0; end
                 row_slider('##yui_modez', 'Icon size', 'mode_icon_size', 0.5, 2.5, 0.05, '%.2fx');
                 if cfg.mode_icon ~= false then row_switch('##yui_modec', 'Stick to the chat', 'ms_chat', "On: YUNA UI sits on the chat's top edge, at its corner, and follows it when you move or resize the chat. Off: drag it anywhere."); end
-                row_switch('##yui_modei', 'Mode switch icon', 'mode_icon', 'On: YUNA UI on the screen shows your mode - its UI pink in Vex mode, gold in Hex link - and a click turns it over to the other one. Drag it anywhere.');
+                row_switch('##yui_modei', 'Mode switch icon', 'mode_icon', 'Click YUNA UI to cycle Vex, Golden Vex, and Hex Link. Hover to see the current mode. Drag it anywhere.');
             end
             section('THIS PANEL');
             row_slider('##yui_palpha', 'Background', 'panel_alpha', 0.15, 1.0, 0.05, '%.2f');
@@ -15873,7 +15925,7 @@ function C.apply_hp()
         NEON[k], NEON2[k] = YUI_HP_COL[2][k], YUI_HP_COL[3][k];
         C.acc[k] = YUI_HP_COL[3][k];
     end
-    if cfg.target_fx == 'link' then                                  -- (Hex link mode: the panel's gold instead)
+    if C.gold() then                                                -- Shared gold styling, independent of bar placement.
         for k = 1, 3 do NEON[k], NEON2[k], C.acc[k] = PANEL.GOLD[k], PANEL.GOLD2[k], PANEL.GOLD2[k]; end
     end
     local t = C.TGTCOL[cfg.target_hp_color or 'pink'] or C.TGTCOL.pink;
@@ -15889,8 +15941,8 @@ function C.apply_hp()
         if b.mb ~= nil then cfg.macrobar = b.mb; end
         pcall(save);
     end
-    YUI_HEX = cfg.target_fx == 'link';                               -- (equip.lua and dps.lua: Hex link mode's look)
-    if YUI_HEX and cfg.head_bars ~= 'head' then cfg.head_bars = 'head'; end   -- (Hex link: your bars always over your head - no other place)
+    YUI_HEX = C.gold();                               -- (equip.lua and dps.lua: Hex link mode's look)
+    if cfg.target_fx == 'link' and cfg.head_bars ~= 'head' then cfg.head_bars = 'head'; end   -- (Hex link: your bars always over your head - no other place)
     YUI_MP_COL = C.MPCOL;
     C.mpb1, C.mpb2 = C.mp, C.mp2;
     if YUI_HEX then                                                  -- Hex link mode: gold HP everywhere, azure MP
@@ -18040,8 +18092,8 @@ EDIT.G.STEPS = {
         "Items that drop show here with the time left and who is winning: LOT or PASS each one, or all of them at once.",
         "An item that goes to you - a drop, or the pool won - pops up for a few seconds: WON and its name." }, { { 'loot_win', 'TREASURE POOL' }, { 'loot_got', 'TREASURE POOL (Item popup)' } } },
     { "Mode switch", function(G) return { G.win('modesw_x') }; end, function(G)
-        return { "YUNA UI, on your chat's top edge, shows your mode: its UI " .. (G.hx() and "gold - Hex link." or "pink - Vex mode."),
-            "Click it and it turns over like a card: the whole UI changes to the other look - " .. (G.hx() and "pink Vex mode" or "gold Hex link") .. ". Click again to come back." }; end,
+        return { "YUNA UI shows your theme: pink for Vex, gold for Golden Vex and Hex Link.",
+            "Click to cycle Vex, Golden Vex, and Hex Link. Golden Vex keeps your player and target bars in fixed positions." }; end,
         { { 'mode_icon', 'GENERAL (Mode switch icon)' } } },
     { "Settings", nil, {
         "Type /yui to open the settings: every piece has its own size, look and on / off switch.",
@@ -18485,9 +18537,9 @@ end
 ----------------------------------------------------------------------------------------------------
 C.MD = { on = false, i = 1, h = 260 };
 C.MD.STEPS = {                                                       -- (one page: see both live, then pick)
-    { 'Pick your style', { "YunaUI comes in two styles. Flip the switch above to see each one live on your screen: a pretend target and fight are showing.",
+    { 'Pick your style', { "YunaUI comes in three styles. Flip the switch above to see each one live on your screen: a pretend target and fight are showing.",
         'Then pick the one you like. You can change it any time at the top of /yui.' },
-      { 'Vex: the target bar where you place it, a fan of weapon skills, the Magic Burst card.', 'Hex link: the target bar over the target, a line to it, hexagon bars, a skillchain banner at the top.' } },
+      { 'Vex: the target bar where you place it, a fan of weapon skills, the Magic Burst card.', 'Hex link: the target bar over the target, a line to it, hexagon bars, a skillchain banner at the top.', 'Golden Vex: gold, angular frames and glass shading with static player and target bars.' } },
 };
 function C.MD.start(then_guide)
     local M = C.MD;
@@ -18495,16 +18547,19 @@ function C.MD.start(then_guide)
     if M.on then return; end
     M.on, M.i, M.then_guide = true, 1, then_guide;
     M.fx0, M.hb0, M.show0 = cfg.target_fx, cfg.head_bars, FIGHT.show;
+    M.golden0 = cfg.golden_vex;
     M.link = cfg.target_fx == 'link';
+    M.mode = C.mode();
     M.base = {};                                                     -- (your sizes now: the mode you're in keeps them)
     for _, k in ipairs(C.MODEKEYS) do M.base[k] = cfg[k]; end
-    C.modesave(M.link);
+    C.modesave(M.mode);
     FIGHT.show = true;                                               -- (a pretend fight, cast and target of target on your target - or a pretend one)
     if not cfg.md_backup then                                        -- (your layout, kept - saved too, so a crash mid-demo can't lose it)
         local t = LAYOUT.capture();
         for _, p_ in ipairs({ 'tn', 'mb', 'fo', 'co' }) do t.o[p_ .. '_dx'], t.o[p_ .. '_dy'] = tonumber(cfg[p_ .. '_dx']), tonumber(cfg[p_ .. '_dy']); end
         t.fan_place, t.ecast_place = cfg.fan_place, cfg.ecast_place;
-        t.fx0, t.hb0, t.base = cfg.target_fx, cfg.head_bars, M.base;   -- (your mode and sizes too: a reload mid-demo puts them back)
+        t.fx0, t.hb0, t.base = cfg.target_fx, cfg.head_bars, M.base;
+        t.golden0 = cfg.golden_vex == true;   -- (your mode and sizes too: a reload mid-demo puts them back)
         cfg.md_backup = t;
     end
     cfg.fan_place, cfg.ecast_place = 'bar', 'bar';                   -- (the fan and the cast by the bar, where they belong)
@@ -18517,6 +18572,7 @@ function C.MD.restore()                                              -- (your ow
     cfg.md_backup = nil;
     if type(t.base) == 'table' then for k, v in pairs(t.base) do cfg[k] = v; end end
     if t.fx0 ~= nil then cfg.target_fx = t.fx0; end
+    cfg.golden_vex = t.golden0 == true;
     if t.hb0 ~= nil then cfg.head_bars = t.hb0; end
     if t.fan_place ~= nil then cfg.fan_place = t.fan_place; end
     if t.ecast_place ~= nil then cfg.ecast_place = t.ecast_place; end
@@ -18529,7 +18585,8 @@ end
 function C.MD.apply()                                                -- (the switch: show that mode live, not saved yet)
     local M = C.MD;
     for k, v in pairs(M.base or {}) do cfg[k] = v; end              -- (your sizes as they were, then that mode's own if it has some kept)
-    local had = C.modeload(M.link);
+    local had = C.modeload(M.mode);
+    cfg.golden_vex = M.mode == 'golden';
     if M.link then                                                   -- (each mode as it's meant to look: Hex link with your bars over your
         cfg.target_fx = 'link';                                      --  head, Normal with them in their place - unless that mode keeps its own)
         if not had then cfg.head_bars = 'head'; end
@@ -18538,19 +18595,17 @@ function C.MD.apply()                                                -- (the swi
         if cfg.target_fx == 'off' then cfg.target_fx = 'blade'; end
         if not had then cfg.head_bars = 'fixed'; end
     end
+    if cfg.golden_vex then cfg.head_bars = 'fixed'; end
+    C.apply_hp();
     FIGHT.fx.t0 = os.clock();                                        -- (its entrance plays again)
 end
 function C.MD.pick(link)
     local M = C.MD;
     for k, v in pairs(M.base or {}) do cfg[k] = v; end              -- (back as it was, then the choice - with that mode's own sizes)
     cfg.target_fx = M.fx0;
+    cfg.golden_vex = M.golden0;
     C.MD.restore();
-    local had = type(cfg[link and 'ms_hex' or 'ms_norm']) == 'table' and (M.fx0 == 'link') ~= link;
     C.setmode(link);
-    if not had then
-        if link and (cfg.head_bars or 'fixed') == 'fixed' then cfg.head_bars = 'head'; end   -- (Hex link: your bars over your head)
-        if not link and M.fx0 == 'link' and cfg.head_bars == 'head' then cfg.head_bars = 'fixed'; end
-    end
     FIGHT.show = M.show0 or false;
     M.on = false;
     cfg.mode_v1 = true;
@@ -18584,7 +18639,7 @@ function C.MD.draw()
     if imgui.Begin('YunaUI Mode##yui_mode', { true }, bit.bor(ImGuiWindowFlags_NoTitleBar, ImGuiWindowFlags_NoResize, ImGuiWindowFlags_NoMove,
             ImGuiWindowFlags_NoScrollbar, ImGuiWindowFlags_NoCollapse, ImGuiWindowFlags_NoSavedSettings)) then
         local pad = math.floor(20 * k);
-        local HX = M.link;
+        local HX = M.mode ~= 'vex';
         local AC, AC2 = HX and PANEL.GOLD or C.normcol(2), HX and PANEL.GOLD2 or C.normcol(3);
         if HX then                                                   -- (the card itself in the chosen mode's look)
             local c = 16 * k;
@@ -18601,21 +18656,22 @@ function C.MD.draw()
         local y = cy + pad;
         local mx, my = imgui.GetMousePos();
         local f0 = sized('chat', 14 * k);                            -- the switch: NORMAL | HEX LINK
-        local sw_, sh_ = math.floor(300 * k), math.floor(32 * k);
+        local sw_, sh_ = math.floor(440 * k), math.floor(32 * k);
         local sx = cx + (CW - sw_) / 2;
-        for i = 1, 2 do
-            local bx = sx + (i - 1) * sw_ / 2;
-            local on = (i == 2) == HX;
-            local hov = mx >= bx and mx < bx + sw_ / 2 and my >= y and my < y + sh_;
-            local a1 = (i == 2) and PANEL.GOLD or C.normcol(2);
-            DL.RF(fg, bx, y, bx + sw_ / 2, y + sh_, u32(on and { a1[1], a1[2], a1[3], 0.32 } or (hov and { 1, 1, 1, 0.07 } or { 0.10, 0.09, 0.13, 1 })), (i == 1) and sh_ / 2 or 0, (i == 1) and C.rleft or 0);
-            DL.R(fg, bx, y, bx + sw_ / 2, y + sh_, U4(a1[1], a1[2], a1[3], on and 0.95 or 0.3), (i == 1) and sh_ / 2 or 0, (i == 1) and C.rleft or 0, on and 1.6 or 1);
-            local lb = (i == 1) and 'VEX' or 'HEX LINK';
+        for i = 1, 3 do
+            local bx = sx + (i - 1) * sw_ / 3;
+            local mode = ({ 'vex', 'hex', 'golden' })[i];
+            local on = M.mode == mode;
+            local hov = mx >= bx and mx < bx + sw_ / 3 and my >= y and my < y + sh_;
+            local a1 = (i ~= 1) and PANEL.GOLD or C.normcol(2);
+            DL.RF(fg, bx, y, bx + sw_ / 3, y + sh_, u32(on and { a1[1], a1[2], a1[3], 0.32 } or (hov and { 1, 1, 1, 0.07 } or { 0.10, 0.09, 0.13, 1 })), (i == 1) and sh_ / 2 or 0, (i == 1) and C.rleft or 0);
+            DL.R(fg, bx, y, bx + sw_ / 3, y + sh_, U4(a1[1], a1[2], a1[3], on and 0.95 or 0.3), (i == 1) and sh_ / 2 or 0, (i == 1) and C.rleft or 0, on and 1.6 or 1);
+            local lb = ({ 'VEX', 'HEX LINK', 'GOLDEN VEX' })[i];
             local lw = spaced_w(lb, 2 * k);
             local _, lh_ = imgui.CalcTextSize(lb);
-            spaced(fg, bx + (sw_ / 2 - lw) / 2, y + (sh_ - lh_) / 2, lb, u32(on and { 1, 1, 1, 1 } or { 0.70, 0.68, 0.78, 1 }), 2 * k);
+            spaced(fg, bx + (sw_ / 3 - lw) / 2, y + (sh_ - lh_) / 2, lb, u32(on and { 1, 1, 1, 1 } or { 0.70, 0.68, 0.78, 1 }), 2 * k);
             imgui.SetCursorScreenPos({ bx, y });
-            if imgui.InvisibleButton('##yui_md_sw' .. i, { sw_ / 2, sh_ }) and not on then M.link = (i == 2); M.apply(); end
+            if imgui.InvisibleButton('##yui_md_sw' .. i, { sw_ / 3, sh_ }) and not on then M.mode, M.link = mode, mode == 'hex'; M.apply(); end
         end
         if #M.STEPS > 1 then
             local stp = string.format('%d / %d', M.i, #M.STEPS);
@@ -18642,12 +18698,13 @@ function C.MD.draw()
             end
         end
         for pi, para in ipairs(words) do
-            local lit = (#words == 2 and st[3] == nil and ((pi == 2) == HX)) or (st[3] ~= nil and ((pi == 2) == HX));
-            local col = (#words == 2) and (lit and { 1, 1, 1, 1 } or { 0.55, 0.54, 0.62, 1 }) or { 0.88, 0.87, 0.93, 1 };
+            local lit = (#words > 1 and st[3] == nil and ((pi == 2) == HX)) or (st[3] ~= nil and ((pi == 2) == HX));
+            if st[3] then lit = pi == ({ vex = 1, hex = 2, golden = 3 })[M.mode]; end
+            local col = (#words > 1) and (lit and { 1, 1, 1, 1 } or { 0.55, 0.54, 0.62, 1 }) or { 0.88, 0.87, 0.93, 1 };
             if pi > 1 then y = y + lh * 0.45; end
-            for li, ln in ipairs(EDIT.G.lines(para, CW - pad * 2 - ((#words == 2) and 14 * k or 0))) do
-                if li == 1 and #words == 2 and lit then C.hexdot(fg, cx + pad + 4 * k, y + lh * 0.42, 4 * k, U4(AC2[1], AC2[2], AC2[3], 1)); end
-                DL.T(fg, cx + pad + ((#words == 2) and 14 * k or 0), y, u32(col), ln);
+            for li, ln in ipairs(EDIT.G.lines(para, CW - pad * 2 - ((#words > 1) and 14 * k or 0))) do
+                if li == 1 and #words > 1 and lit then C.hexdot(fg, cx + pad + 4 * k, y + lh * 0.42, 4 * k, U4(AC2[1], AC2[2], AC2[3], 1)); end
+                DL.T(fg, cx + pad + ((#words > 1) and 14 * k or 0), y, u32(col), ln);
                 y = y + lh;
             end
         end
@@ -18667,9 +18724,10 @@ function C.MD.draw()
             return hit;
         end
         if last then                                                 -- I AM NORMAL / I AM HEX LINK
-            local bw = math.floor((CW - pad * 2 - 12 * k) / 2);
-            if button('pn', 'VEX MODE', cx + pad, bw, true, C.normcol(3)) then M.pick(false); end
-            if button('ph', 'HEX LINK MODE', cx + pad + bw + 12 * k, bw, true, PANEL.GOLD2) then M.pick(true); end
+            local bw = math.floor((CW - pad * 2 - 24 * k) / 3);
+            if button('pn', 'VEX', cx + pad, bw, true, C.normcol(3)) then M.pick(false); end
+            if button('ph', 'HEX LINK', cx + pad + bw + 12 * k, bw, true, PANEL.GOLD2) then M.pick(true); end
+            if button('pg', 'GOLDEN VEX', cx + pad + 2 * (bw + 12 * k), bw, true, PANEL.GOLD2) then M.pick('golden'); end
             y = y + bh + 10 * k;
             if M.i > 1 and button('back', 'BACK', cx + pad, math.floor(90 * k), false) then M.i = M.i - 1; end
         else
@@ -19365,12 +19423,13 @@ ashita.events.register('command', 'yui_command', function(e)
     elseif sub == 'sizes' then                                       -- (/yui sizes: each window's size as YunaUI measured it - for layout bugs)
         for k, sz in pairs(WATCH.size or {}) do msg(string.format('%s  x=%d  w=%d h=%d', k, tonumber(cfg[k]) or -1, sz[1], sz[2])); end
     elseif sub == 'setnormal' or sub == 'setvex' then pcall(C.setmode, false); pcall(C.mt_start, false); save();
+    elseif sub == 'setgolden' or sub == 'setgoldenvex' then C.setmode('golden'); C.mt_start(true);
     elseif sub == 'sethex' then pcall(C.setmode, true); pcall(C.mt_start, true); save();
     elseif sub == 'mode' and args[3] == 'close' then                 -- (/yui mode close: leave the chooser, your style and layout as they were)
-        if C.MD.on then C.MD.pick(C.MD.fx0 == 'link'); end
+        if C.MD.on then C.MD.pick(C.MD.fx0 == 'link' and 'hex' or (C.MD.golden0 and 'golden' or 'vex')); end
     elseif sub == 'mode' then C.MD.start(false);                      -- (/yui mode [2] [hex]: open on a card, showing a style - for checking it)
         if tonumber(args[3] or '') then C.MD.i = tonumber(args[3]); end
-        if args[4] == 'hex' or args[4] == 'normal' then C.MD.link = args[4] == 'hex'; C.MD.apply(); end                      -- the mode chooser again (Normal or Hex link)
+        if args[4] == 'hex' or args[4] == 'normal' or args[4] == 'golden' or args[4] == 'vex' then C.MD.mode = C.modeid(args[4]); C.MD.link = C.MD.mode == 'hex'; C.MD.apply(); end                      -- the mode chooser again (Normal or Hex link)
     elseif sub == 'lock' or sub == 'unlock' then cfg.locked = (sub == 'lock'); save(); msg(cfg.locked and 'Locked.' or 'Unlocked.');
     elseif sub == 'reset' then settings.reset(); msg('Reset to default (reload the addon to move everything back).');
     else msg('/yui  - open YunaUI   |   /yui edit   |   /yui guide   |   /yui lock | unlock   |   /yui reset'); end
