@@ -10736,8 +10736,9 @@ local function draw_chat(n)
         local linked = cfg.chat_link and cfg.chat_split and n ~= 3;   -- (the third chat stands on its own)
         local other = cw[(n == 1) and 2 or 1];
         local hovx = hov or (linked and other.hovraw) or false;     -- (anchored: the mouse over either lights both)
-        local want = (hovx or typing or chat_lit_all or st.scroll > 0) and 1 or 0;
-        st.hv = st.hv + (want - st.hv) * math.min(1, (imgui.GetIO().DeltaTime or 0.016) * 8);
+        local keep_open = cfg.chat_fade_old == false;               -- (Fade when idle off: the whole panel stays open, even before any lines arrive)
+        local want = (keep_open or hovx or typing or chat_lit_all or st.scroll > 0) and 1 or 0;
+        st.hv = keep_open and 1 or (st.hv + (want - st.hv) * math.min(1, (imgui.GetIO().DeltaTime or 0.016) * 8));
         if n == 1 then                                               -- CHAT > Back to All when it closes: a tab picked in the full screen chat
             if legacy.pad.big then st.was_open = true;               --  (Say, Party, Shout...) goes back to All as it closes - command results
             elseif st.was_open then                                  --  (/find...) show again; a tab picked anywhere else stays
@@ -10761,7 +10762,7 @@ local function draw_chat(n)
             local pulse = math.max(0, 1 - (now - last) / 2.5);
             st.pulse = pulse;
             local uh = st.used_h or 0;
-            local oth = linked and (((other.used_h or 0) > 0) or (other.hv or 0) > 0.02);   -- (the linked one shows a panel too: they join; empty, this one stands alone)
+            local oth = linked and (keep_open or ((other.used_h or 0) > 0) or (other.hv or 0) > 0.02);   -- (the linked one shows a panel too: they join; empty, this one stands alone)
             if linked and cfg.chat_link_v and C.clear_on() then      -- (anchored one on top of the other: the top one's panel as tall as
                 local me_y = tonumber(cfg[(n == 1) and 'chat_y' or 'chat2_y']) or 0;   --  its own lines; the bottom one's whole height when the top
                 local ot_y = tonumber(cfg[(n == 1) and 'chat2_y' or 'chat_y']) or 0;   --  one has lines - so they always meet, no gap between them)
@@ -10783,7 +10784,7 @@ local function draw_chat(n)
                     if linked and cfg.chat_link_v then               -- (linked one on top of the other: only the corners away from the other one)
                         local me_y = tonumber(cfg[(n == 1) and 'chat_y' or 'chat2_y']) or 0;
                         local ot_y = tonumber(cfg[(n == 1) and 'chat2_y' or 'chat_y']) or 0;
-                        if ot_y < me_y then fl = ((other.used_h or 0) > 0) and (ImDrawFlags_RoundCornersBottom or ImDrawCornerFlags_Bot or 12) or C.rall;   -- (the top one empty: all round)
+                        if ot_y < me_y then fl = (keep_open or (other.used_h or 0) > 0) and (ImDrawFlags_RoundCornersBottom or ImDrawCornerFlags_Bot or 12) or C.rall;   -- (the top one empty: all round)
                         else fl = oth and (ImDrawFlags_RoundCornersTop or ImDrawCornerFlags_Top or 3) or C.rall; end
                     end
                     local rr = YUI_HEX and 3 or 10;                  -- (Hex link: crisper corners)
@@ -15402,7 +15403,7 @@ local function draw_window()
             row_switch('##yui_canim', 'Animated lines', 'chat_anim', 'On: new lines slide in with a soft glow (Classic: also a short bar in their channel\'s colour for a moment).');
             row_switch('##yui_cfeed', 'Combat feed', 'chat_feed', 'On: a spell or ability is one line that grows as it happens (who > spell > target, then a tick, the damage, the HP healed or miss) instead of three or four lines. Only new lines.');
             if cfg.chat_feed ~= false then row_switch('##yui_crounds', 'Melee rounds', 'chat_rounds', 'On: one attack round (several hits - Kraken Club, double and triple attacks) is one line: who > target, hits, their damage, crits and misses. Only new lines.'); end
-            row_switch('##yui_cfade', 'Fade when idle', 'chat_fade_old', 'On: each line shows for a while, then fades away, and the panel shrinks with it, so the chat clears when nobody writes (put the mouse over it to see everything). Off: every line stays visible all the time.');
+            row_switch('##yui_cfade', 'Fade when idle', 'chat_fade_old', 'On: each line shows for a while, then fades away, and the panel shrinks with it, so the chat clears when nobody writes (put the mouse over it to see everything). Off: all enabled chat windows stay fully expanded and every line stays visible, even when a window is empty.');
             if cfg.chat_fade_old ~= false then row_slider('##yui_s_h', 'Lines stay for', 'chat_hold', 3, 60, 1, '%d s'); end
             row_switch('##yui_cbub', 'Speech bubbles', 'chat_bubbles', 'On: say and party lines also show as a bubble over the head of whoever said it (when they\'re near you).');
             section('HISTORY');
