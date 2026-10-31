@@ -4,11 +4,11 @@ import unittest
 from lupa.luajit21 import LuaRuntime
 
 SOURCE = (Path(__file__).resolve().parents[1] / 'yunaui.lua').read_text(encoding='utf-8')
-START = SOURCE.index('local function draw_chat(n)')
+START = SOURCE.index('function C.chat_chain()')
 PANEL = SOURCE[START:SOURCE.index('        st.vis_n = 0;', START)] + '\n    end\nend\nreturn draw_chat'
 
 class ChatVisibility(unittest.TestCase):
-    def panel(self, n, fade, used=0, hover=False, look='clear', linked=False, vertical=False):
+    def panel(self, n, fade, used=0, hover=False, look='clear', linked=False, vertical=False, window_fade=None, third_link=False):
         lua = LuaRuntime(unpack_returned_tuples=True)
         lua.execute('''
             cfg = { chat=true, chat_split=true, chat3=true, cm_v1=true,
@@ -54,6 +54,9 @@ class ChatVisibility(unittest.TestCase):
         g.cfg.chat_fade_old = fade
         g.cfg.chat_link = linked
         g.cfg.chat_link_v = vertical
+        g.cfg.chat3_link = third_link
+        if window_fade is not None:
+            g.cfg['chat_fade_w' + str(n)] = window_fade
         g.hover, g.look, g.YUI_HEX = hover, look, look == 'gold'
         for i in range(1, 4):
             g.cw[i].used_h = used
@@ -85,6 +88,19 @@ class ChatVisibility(unittest.TestCase):
             self.assertEqual(hv,0)
             panel,hv,_,h = self.panel(n,True,20)
             self.assertLess(panel.h,h)
+
+    def test_individual_fade_off_keeps_each_window_open(self):
+        for n in (1,2,3):
+            panel,hv,y,h = self.panel(n,True,window_fade=False)
+            self.assertEqual(hv,1)
+            self.assertEqual(panel.y,y)
+            self.assertEqual(panel.h,h)
+
+    def test_joined_third_window_stays_open_when_empty(self):
+        for n in (1,2,3):
+            panel,hv,y,h = self.panel(n,False,linked=True,third_link=True)
+            self.assertEqual(panel.y,y)
+            self.assertEqual(panel.h,h)
 
     def test_hover_still_expands_when_fade_is_on(self):
         panel,hv,_,_ = self.panel(2,True,hover=True)

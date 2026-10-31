@@ -2,7 +2,7 @@
 -- GPL-3.0 with an attribution term: keep this credit (see NOTICE and LICENSE).
 addon.name    = 'yunaui';
 addon.author  = 'Yunas';
-addon.version = '1.0.105';
+addon.version = '1.0.108';
 addon.desc    = 'YunaUI: target bar, party and alliance lists, chat, your bars, gear strip, pet bar, cooldowns and a damage meter, in one style.';
 addon.link    = '';
 
@@ -115,7 +115,7 @@ local defaults = T{
     chat3 = false, chat3_x = -1, chat3_y = -1, chat3_w = 460, chat3_h = 260, c3_tell = true, c3_ls = true, c3_ls2 = true,
     c3_party = false, c3_say = false, c3_shout = false, c3_unity = false,
     cm_tell = true, cm_ls = true, cm_ls2 = true, cm_party = true, cm_say = true, cm_shout = true, cm_unity = true,
-    chat_fade = true, spine_edge_anim = 'shine', card_shape = 'blade', card_theme = 'pearl', card_fx = 'sheen', card_low = true, mb_scale = 1.0, tag_look = 'role', target_buff_scale = 1.0, target_name_scale = 1.0, ecast_font = 1.0, target_look = 'dd2', spine_line = true, ecast_scale = 0.75, spine_trace = true, card_style = 'clean', bracket_look = 'glass', card_h = 1.0, fan_scale = 1.0, hp_outline = true, target_hp_color = 'pink', party_look = 'spine', spine_edge = 'thin', spine_edge_col = 'black', ally1_icon = 1.0, ally2_icon = 1.0, ally_anchor = false, ally_select_fx = 'chroma', ally_style = 'full', ally_smart_hp = 75, strip_show = true, hp_color = 'pink', fight_info = true, fan_layout = 'fan', fan_shape = 'blade', fan_accent = 'slash', fan_tint = 'dark', target_bar_h = 4, fan_place = 'bar', ecast_place = 'bar', fan_x = -1, fan_y = -1, ecast_x = -1, ecast_y = -1, buffs_off = {}, party_bar_h = 3, party_vgap = 0, chat_save = false, chat_gap = 6, chat_outline = 'outline', chat_ground = true, chat_ground_a = 0.5, chat_linebg = true, party_dim_far = true, party_range = 20.8, party_dist = true, party_buff_side = 'left', party_buff_row = 8, exp_text = 1.0, target_fx = 'blade', minimap = true, map_size = 220, map_zoom = 60, map_mobs = true, bigmap_size = 640, map_color = 'white', map_title = 'fade', map3d_size = 560, map_style = '2d', map3d_follow = true, map_ground = 'none', map_replace = false, map_arrow_color = 'lines', map_lines = 'hp', chat_time_dim = true, chat_hold = 12, chat_bright = 1.0, chat_tab = 1, chat_anim = true, chat_feed = true, chat_bubbles = true, chat_fade_old = true, chat_f_others = true, chat_f_debuff = true, chat_f_wear = true, cf_w_me = true, cf_w_party = true, cf_w_alliance = true, cf_w_trust = true, cf_w_monster = true, cf_w_npc = true, cf_t_melee = true, cf_t_ranged = true, cf_t_magic = true, cf_t_uses = true, cf_t_healing = true, cf_t_defence = true, cf_t_effects = true, cf_t_items = true, cf_cols = false, party_zone = true, loot_win = true, loot_scale = 1.0, loot_coin_scale = 1.0, chat_time_sec = false, chat_time_12 = false, chat_time_case = 'lower', target_bar_anim = true, map_hub = false, chat_look = 'clear', head_bars = 'fixed', head_fight = false, head_bars_scale = 1.0, head_bars_y = 0, head_nums = 'always', hl_path = 'elbow', hl_line = 'neon', hl_lcol = 'match', hl_lw = 0.6, hl_rest = 'hide', hl_pulse = false, hl_head = 'none', hl_icon = 'diamond', hl_isz = 0.65, hl_mcol = 'gold', hl_fcol = 'mint', hl_ianim = 'pulse', hl_fan = 0.8, show_fan = true, show_mb = true, hl_pct = 1.0, hl_cast = 0.8, hl_tot = 0.8, hl_hidename = true, hl_claim = true, map_tilt = true, party_buff_ffxi = true, party_tag_col = 'job', party_hp_th = 1.0, party_mp_th = 1.0, target_buff_tips = true, buff_timer_scale = 1.0, tp_sound = true, tp_sound_vol = 0.6, loot_voice = true, loot_voice_vol = 0.8, tarrow = true, macrobar = true, mb_show = 'hold', mb_always = false, mb_pad = 'hold', mb_btn = 'l2', mb_scale = 1.0, mb_look = 'strip', mb_style = 'cards', hp_by_job = false, mb_timers = true, mb_wave = 'bars', mb_text = 1.0, mb_both = true, mb_frame = 'arc', mb_view = 'pills', mbp_x = -1, mbp_y = -1, mb_brush = 'all', mb_layout = 'lens', mb_wcol = 'gold', mb_nstyle = 'wave', mb_wavecol = 'job', mb_sound = true, mb_snd_vol = 0.6, mb_voice = true, mb_voice_vol = 0.8, mb_cards_at = 'feet', mb_dn = 'hd_circle', mb_dh = 'hd_sigil', mb_x = -1, mb_y = -1, mbs_x = -1, mbs_y = -1, mbc_x = -1, mbc_y = -1, chat_panel_a = 0.72, chat_msg_gap = 5,  map_dock = true, enemy_buff_scale = 1.0, enemy_buff_text = 1.0, chat_tab_reset = true, chat_rounds = true, hex_party = true, golden_vex = false, setup_done = false,
+    chat_fade = true, spine_edge_anim = 'shine', card_shape = 'blade', card_theme = 'pearl', card_fx = 'sheen', card_low = true, mb_scale = 1.0, tag_look = 'role', target_buff_scale = 1.0, target_name_scale = 1.0, ecast_font = 1.0, target_look = 'dd2', spine_line = true, ecast_scale = 0.75, spine_trace = true, card_style = 'clean', bracket_look = 'glass', card_h = 1.0, fan_scale = 1.0, hp_outline = true, target_hp_color = 'pink', party_look = 'spine', spine_edge = 'thin', spine_edge_col = 'black', ally1_icon = 1.0, ally2_icon = 1.0, ally_anchor = false, ally_select_fx = 'chroma', ally_style = 'full', ally_smart_hp = 75, strip_show = true, hp_color = 'pink', fight_info = true, fan_layout = 'fan', fan_shape = 'blade', fan_accent = 'slash', fan_tint = 'dark', target_bar_h = 4, fan_place = 'bar', ecast_place = 'bar', fan_x = -1, fan_y = -1, ecast_x = -1, ecast_y = -1, buffs_off = {}, party_bar_h = 3, party_vgap = 0, chat_save = false, chat_gap = 6, chat_outline = 'outline', chat_ground = true, chat_ground_a = 0.5, chat_linebg = true, party_dim_far = true, party_range = 20.8, party_dist = true, party_buff_side = 'left', party_buff_row = 8, exp_text = 1.0, target_fx = 'blade', minimap = true, map_size = 220, map_zoom = 60, map_mobs = true, map_gp = true, map_npcs = false, bigmap_size = 640, map_color = 'white', map_title = 'fade', map3d_size = 560, map_style = '2d', map3d_follow = true, map_ground = 'none', map_replace = false, map_arrow_color = 'lines', map_lines = 'hp', chat_time_dim = true, chat_hold = 12, chat_bright = 1.0, chat_tab = 1, chat_anim = true, chat_feed = true, chat_bubbles = true, chat_fade_old = true, chat_fade_w1 = true, chat_fade_w2 = true, chat_fade_w3 = true, chat_f_others = true, chat_f_debuff = true, chat_f_wear = true, cf_w_me = true, cf_w_party = true, cf_w_alliance = true, cf_w_trust = true, cf_w_monster = true, cf_w_npc = true, cf_t_melee = true, cf_t_ranged = true, cf_t_magic = true, cf_t_uses = true, cf_t_healing = true, cf_t_defence = true, cf_t_effects = true, cf_t_items = true, cf_cols = false, party_zone = true, loot_win = true, loot_scale = 1.0, loot_coin_scale = 1.0, chat_time_sec = false, chat_time_12 = false, chat_time_case = 'lower', target_bar_anim = true, map_hub = false, chat_look = 'clear', head_bars = 'fixed', head_fight = false, head_bars_scale = 1.0, head_bars_y = 0, head_nums = 'always', hl_path = 'elbow', hl_line = 'neon', hl_lcol = 'match', hl_lw = 0.6, hl_rest = 'hide', hl_pulse = false, hl_head = 'none', hl_icon = 'diamond', hl_isz = 0.65, hl_mcol = 'gold', hl_fcol = 'mint', hl_ianim = 'pulse', hl_fan = 0.8, show_fan = true, show_mb = true, hl_pct = 1.0, hl_cast = 0.8, hl_tot = 0.8, hl_hidename = true, hl_claim = true, map_tilt = true, party_buff_ffxi = true, party_tag_col = 'job', party_hp_th = 1.0, party_mp_th = 1.0, target_buff_tips = true, buff_timer_scale = 1.0, tp_sound = true, tp_sound_vol = 0.6, loot_voice = true, loot_voice_vol = 0.8, tarrow = true, macrobar = true, mb_show = 'hold', mb_always = false, mb_pad = 'hold', mb_btn = 'l2', mb_scale = 1.0, mb_look = 'strip', mb_style = 'cards', hp_by_job = false, mb_timers = true, mb_wave = 'bars', mb_text = 1.0, mb_both = true, mb_frame = 'arc', mb_view = 'pills', mbp_x = -1, mbp_y = -1, mb_brush = 'all', mb_layout = 'lens', mb_wcol = 'gold', mb_nstyle = 'wave', mb_wavecol = 'job', mb_sound = true, mb_snd_vol = 0.6, mb_voice = true, mb_voice_vol = 0.8, mb_cards_at = 'feet', mb_dn = 'hd_circle', mb_dh = 'hd_sigil', mb_x = -1, mb_y = -1, mbs_x = -1, mbs_y = -1, mbc_x = -1, mbc_y = -1, chat_panel_a = 0.72, chat_msg_gap = 5,  map_dock = true, enemy_buff_scale = 1.0, enemy_buff_text = 1.0, chat_tab_reset = true, chat_rounds = true, hex_party = true, golden_vex = false, setup_done = false,
     hide_game_chat = true, chat_time = false, hide_game_input = false, chat_typing = true, min_anim = 'fly', dps_backdrop = 0.55, dps_title_b = 1.0, dps_detail_b = 1.0,
     target_scale = 1.0, party_scale = 1.0, alliance_scale = 1.0, buff_scale = 1.0,
     locked = false, panel_scale = 1.0, panel_alpha = 0.95, mini_x = -1, mini_y = -1,
@@ -5139,7 +5139,7 @@ function ALLY.tag(dl, m, i, x, ny, ch, sc, v, live, mir, cap)       -- (mir: x i
     local tc = ALLY.tagcol(m.job);
     local dim = m.inzone and 1 or 0.45;
     local job = m.tagtext or JOBS[m.job or 0] or '?';
-    local fs0 = (FS or 1) * 0.80;
+    local fs0 = (FS or 1) * 0.80 * (ALLY.tagk or 1);                 -- (ALLY.tagk: smaller writing, for a tag in a small box)
     imgui.SetWindowFontScale(fs0 * 0.74);
     local jw, jh = imgui.CalcTextSize(job);
     jh = tonumber(jh) or 10;
@@ -5554,36 +5554,52 @@ function ALLY.nflip(dl, m, i, x1, tip, ny, ch, lh, sc, v, party, live, f)
     local tw_, th_t, s_t = ALLY.tagw(ch, sc);
     local tcol = ALLY.tagcol(m.job);
     local dimt = m.inzone and 1 or 0.45;
-    if face then                                                     -- the back: the name where the tag was, the tag at the right end
-        local nw_ = tw_;                                             -- (the tag's own room: the card as long as the front's)
-        local thk = th_t * k;
-        local nx0, ny0 = x1 + 2 * sc, ny - thk / 2;
-        local sk = thk * 0.30;
-        if ta > 0 then                                               -- (just the name: white with a dark outline, no plate - right by the card)
-            local fsn = (FS or 1) * 0.80 * 0.74;
-            local nm = (m.name or '?'):upper();
+    if face then                                                     -- the back: a box on the left - the name, its TP under it - where the tag was; the job
+        local nx0 = x1 + 2 * sc;                                     --  tag in a box at the card's right end, how far under it (the card as long as the front's)
+        tend = nx0 + tw_;
+        local card_ = { { nx0, y1 }, { tip, y1 }, { tip - sl, y2 }, { nx0, y2 } };   -- (one card, the name's box part of it - drawn first, the name over it)
+        ALLY.poly(dl, card_, U4(0.085, 0.08, 0.115, 0.82 * v));
+        ALLY.grad(dl, { nx0, y1 }, { tip - sl, y1 + 1 }, { 1, 1, 1, 0.14 * v }, { 1, 1, 1, 0 }, { 1, 1, 1, 0 }, { 1, 1, 1, 0.14 * v });
+        for q = 1, 4 do dl:AddLine(card_[q], card_[q % 4 + 1], low and U4(1.0, 0.32, 0.36, 0.9 * v) or (tgt and U4(1, 1, 1, 0.85 * v) or U4(0, 0, 0, 0.85 * v)), tgt and 1.2 or 1); end
+        DL.L(dl, tend + gp * 0.5, y1 + 1, tend + gp * 0.5 - sl, y2 - 1, U4(1, 1, 1, 0.55 * v), 1);   -- (a white line leaning as the card: the name's part, then the bars)
+        if ta > 0 then
+            local hastp = m.inzone and m.tp ~= nil;                  -- (alliance members too: the game sends their TP)
+            local fsn = (FS or 1) * 0.80 * 0.70;
+            local nm = (m.name or '?'):upper():sub(1, 4):gsub('%s+$', '');   -- (the first 4 letters only, as Hex link's turned plate)
             imgui.SetWindowFontScale(fsn);
-            local room = nw_ + 4 * sc;                               -- (a long name: smaller, then cut)
+            local room = tw_ - sl * 0.3 - 5 * sc;                    -- (still too wide: smaller, then its last letters left off - no dot)
             local w0 = tonumber((imgui.CalcTextSize(nm))) or 0;
             if w0 > room then
-                imgui.SetWindowFontScale(fsn * math.max(0.62, room / math.max(1, w0)));
-                while #nm > 2 and (tonumber((imgui.CalcTextSize(nm))) or 0) > room do nm = nm:sub(1, -3) .. '.'; end
+                imgui.SetWindowFontScale(fsn * math.max(0.56, room / math.max(1, w0)));
+                while #nm > 2 and (tonumber((imgui.CalcTextSize(nm))) or 0) > room do nm = nm:sub(1, -2):gsub('%s+$', ''); end
             end
-            local w1, h1 = imgui.CalcTextSize(nm);
-            w1, h1 = tonumber(w1) or 0, tonumber(h1) or 10;
-            local nx_, ny_ = nx0 + nw_ - sk * 0.5 - w1, ny - h1 / 2;
-            for _, d in ipairs({ { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 }, { 1, 1 } }) do text(dl, nx_ + d[1], ny_ + d[2], nm, { 0, 0, 0, 0.85 * v * ta * dimt }); end
-            text(dl, nx_, ny_, nm, { 1, 1, 1, v * ta * (m.inzone and 1 or 0.55) });
+            local _, h1 = imgui.CalcTextSize(nm);
+            h1 = tonumber(h1) or 10;
+            local ny_ = hastp and (y1 + ((ny - y1) - h1) / 2 + 1 * sc) or (ny - h1 / 2);   -- (with TP: the top half)
+            text(dl, nx0 + 4 * sc, ny_, nm, { 1, 1, 1, v * ta * (m.inzone and 1 or 0.55) });
             imgui.SetWindowFontScale(FS or 1);
+            if hastp then                                            -- ("TP 2250" on one line in the bottom half, gold from 1000)
+                local tp = tonumber(m.tp) or 0;
+                local full = tp >= 1000;
+                local ts = tostring(tp);
+                local k_ = 1;
+                imgui.SetWindowFontScale(fs0 * 0.46);
+                local lw = tonumber((imgui.CalcTextSize('TP'))) or 8;
+                imgui.SetWindowFontScale(fs0 * 0.66);
+                local vw, vh = imgui.CalcTextSize(ts);
+                vw, vh = tonumber(vw) or 16, tonumber(vh) or 10;
+                local troom = tw_ - sl - 6 * sc;
+                if lw + 3 * sc + vw > troom then k_ = math.max(0.6, troom / (lw + 3 * sc + vw)); end
+                local foot = ny + ((y2 - ny) + vh * k_) / 2 - 1 * sc;
+                imgui.SetWindowFontScale(fs0 * 0.66 * k_);
+                text(dl, nx0 + 4 * sc + (lw + 3 * sc) * k_, foot - vh * k_, ts, full and { 1.0, 0.82, 0.42, v * ta } or { 0.80, 0.79, 0.88, 0.85 * v * ta });
+                imgui.SetWindowFontScale(fs0 * 0.46 * k_);
+                local _, lh_ = imgui.CalcTextSize('TP');
+                text(dl, nx0 + 4 * sc, foot - (tonumber(lh_) or 7) - vh * k_ * 0.06, 'TP', full and { 1.0, 0.82, 0.42, 0.75 * v * ta } or { 0.62, 0.60, 0.72, 0.8 * v * ta });
+                imgui.SetWindowFontScale(FS or 1);
+            end
         end
-        tend = nx0 + nw_;
-        tipb = tip - tw_ - gp;
-        local R = tipb - sl * ((ch - th_t) / 2) / math.max(1, ch) + gp - s_t + tw_;   -- (its slanted left side parallel to the card's right one)
-        if p >= 1 and k >= 0.99 then
-            ALLY.tag(dl, m, i, R, ny, ch, sc, v, live, true);
-        else                                                         -- (while turning: a stripe of the tag's colour)
-            ALLY.poly(dl, { { R - tw_ + sk, ny0 }, { R, ny0 }, { R, ny0 + thk }, { R - tw_, ny0 + thk } }, U4(tcol[1][1], tcol[1][2], tcol[1][3], v * dimt));
-        end
+        tipb = tip;
     elseif p >= 1 and k >= 0.99 then
         tend = ALLY.tag(dl, m, i, x1 + 2 * sc, ny, ch, sc, v, live);
     else                                                             -- (while turning: a stripe of the tag's colour)
@@ -5592,15 +5608,51 @@ function ALLY.nflip(dl, m, i, x1, tip, ny, ch, lh, sc, v, party, live, f)
         ALLY.poly(dl, { { x1 + 2 * sc, ny - th2 / 2 }, { x1 + 40 * sc, ny - th2 / 2 }, { x1 + 40 * sc - th2 * 0.3, ny + th2 / 2 }, { x1 + 2 * sc, ny + th2 / 2 } }, U4(tc[1], tc[2], tc[3], v));
         tend = x1 + 40 * sc;
     end
-    local card = { { tend + gp, y1 }, { tipb, y1 }, { tipb - sl, y2 }, { tend + gp - sl, y2 } };
-    ALLY.poly(dl, card, U4(0.085, 0.08, 0.115, 0.82 * v));
-    ALLY.grad(dl, { tend + gp, y1 }, { tipb - sl, y1 + 1 }, { 1, 1, 1, 0.14 * v }, { 1, 1, 1, 0 }, { 1, 1, 1, 0 }, { 1, 1, 1, 0.14 * v });
-    for q = 1, 4 do dl:AddLine(card[q], card[q % 4 + 1], low and U4(1.0, 0.32, 0.36, 0.9 * v) or (tgt and U4(1, 1, 1, 0.85 * v) or U4(0, 0, 0, 0.85 * v)), tgt and 1.2 or 1); end
+    if not face then                                                 -- (the back's card: drawn already, under the name)
+        local card = { { tend + gp, y1 }, { tipb, y1 }, { tipb - sl, y2 }, { tend + gp - sl, y2 } };
+        ALLY.poly(dl, card, U4(0.085, 0.08, 0.115, 0.82 * v));
+        ALLY.grad(dl, { tend + gp, y1 }, { tipb - sl, y1 + 1 }, { 1, 1, 1, 0.14 * v }, { 1, 1, 1, 0 }, { 1, 1, 1, 0 }, { 1, 1, 1, 0.14 * v });
+        for q = 1, 4 do dl:AddLine(card[q], card[q % 4 + 1], low and U4(1.0, 0.32, 0.36, 0.9 * v) or (tgt and U4(1, 1, 1, 0.85 * v) or U4(0, 0, 0, 0.85 * v)), tgt and 1.2 or 1); end
+    end
+    if face then                                                     -- the back's right box: a line down leaning as the card, the job tag on top, how
+        local xd = tipb - tw_ - 8 * sc;                              --  far (yalms) under it, a line between
+        local lc = U4(1, 1, 1, 0.55 * v);                            -- (fine white lines, as the drawing)
+        DL.L(dl, xd, y1 + 1, xd - sl, y2 - 1, lc, 1);
+        local xr = tipb - sl * 0.5;                                  -- (the card's right side, half way down)
+        DL.L(dl, xd - sl * 0.5, ny, xr, ny, lc, 1);
+        if ta > 0 then
+            local tch = math.max(4, (ny - y1) - 3 * sc) / 0.78;        -- (the tag: as tall as the top half allows)
+            local tcy = y1 + (ny - y1) / 2 + 0.5 * sc;
+            local tx0 = xd - sl * ((tcy - y1) / math.max(1, y2 - y1)) + 4 * sc;   -- (clear of the leaning line)
+            if p >= 1 and k >= 0.99 then
+                imgui.SetWindowFontScale(fs0 * 0.74);                -- (a short card - alliance: the job's letters smaller, to fit the top half)
+                local jh_ = tonumber(select(2, imgui.CalcTextSize('WHM'))) or 10;
+                imgui.SetWindowFontScale(fs0);
+                ALLY.tagk = math.max(0.6, math.min(1, ((ny - y1) - 4 * sc) / math.max(1, jh_)));
+                local ok_, er_ = pcall(ALLY.tag, dl, m, i, tx0, tcy, tch, sc, v, live);
+                ALLY.tagk = nil;
+                if not ok_ then error(er_, 0); end
+            else                                                     -- (while turning: a stripe of the tag's colour)
+                local th2 = (ny - y1 - 3 * sc);
+                ALLY.poly(dl, { { tx0, tcy - th2 / 2 }, { tx0 + tw_ - 4 * sc, tcy - th2 / 2 }, { tx0 + tw_ - 4 * sc - th2 * 0.3, tcy + th2 / 2 }, { tx0, tcy + th2 / 2 } }, U4(tcol[1][1], tcol[1][2], tcol[1][3], v * dimt * ta));
+            end
+            local dist = (i ~= 0 and m.inzone) and (m.dist or (m.fake and (m.far and 32.4 or (3 + (i * 3.7) % 15))) or nil) or nil;
+            if dist and cfg.party_dist ~= false then                 -- (how far, in yalms - pink out of range)
+                local dstr = string.format('%.1f', dist);
+                imgui.SetWindowFontScale(fs0 * 0.62);
+                local dw_, dh_ = imgui.CalcTextSize(dstr);
+                dw_, dh_ = tonumber(dw_) or 0, tonumber(dh_) or 10;
+                local far_ = dist > (tonumber(cfg.party_range) or 20.8);
+                local bl_ = xd - sl * 0.75;                          -- (the box's middle in the bottom half)
+                local cx_ = (bl_ + (tipb - sl * 0.75)) / 2;
+                text(dl, cx_ - dw_ / 2, ny + ((y2 - ny) - dh_) / 2, dstr, far_ and { 1, 0.55, 0.75, v * ta } or { 0.84, 0.83, 0.90, 0.9 * v * ta });
+                imgui.SetWindowFontScale(fs0);
+            end
+        end
+    end
     if face and ta > 0 then                                          -- the back: HP and MP, each across its half
-        local tpc = 0;                                               -- (the TP: a small column, the bars get the room)
-        if party then imgui.SetWindowFontScale(fs0 * 0.66); tpc = (tonumber((imgui.CalcTextSize('3000'))) or 20) + 6 * sc; imgui.SetWindowFontScale(fs0); end
         local tx = tend + gp + 4 * sc;
-        local bx1 = tipb - sl * 0.5 - 6 * sc - tpc;
+        local bx1 = tipb - tw_ - 8 * sc - sl * 0.5 - 6 * sc;          -- (up to the right box)
         if m.inzone then
             local hasmp = party or (m.mp or 0) > 0;
             local mid = hasmp and (tx + bx1) / 2 or bx1;
@@ -5639,23 +5691,6 @@ function ALLY.nflip(dl, m, i, x1, tip, ny, ch, lh, sc, v, party, live, f)
             end
             lab(tx + 2 * sc, 'HP', tostring(m.hp or 0), low and { 1, 0.55, 0.58 } or { 0.80, 0.78, 0.86 }, mid - tx - 8 * sc);
             if hasmp then lab(mid + 3 * sc, 'MP', tostring(m.mp or 0), { 0.62, 0.74, 1 }, bx1 - mid - 6 * sc); end
-        end
-        if party and m.inzone then                                   -- (the TP, in its column as on the front)
-            local tp = tonumber(m.tp) or 0;
-            local cx = bx1 + 6 * sc + (tpc - 6 * sc) / 2;
-            imgui.SetWindowFontScale(fs0 * 0.46);
-            local lw, lhh = imgui.CalcTextSize('TP');
-            lhh = tonumber(lhh) or lh * 0.62;
-            imgui.SetWindowFontScale(fs0 * 0.66);
-            local ts = tostring(tp);
-            local vw, vh = imgui.CalcTextSize(ts);
-            vh = tonumber(vh) or lh * 0.92;
-            local y0 = ny - (lhh + vh - 2 * sc) / 2;
-            local full = tp >= 1000;
-            text(dl, cx - vw / 2, y0 + lhh - 2 * sc, ts, full and { 1.0, 0.82, 0.42, v * ta } or { 0.80, 0.79, 0.88, 0.85 * v * ta });
-            imgui.SetWindowFontScale(fs0 * 0.46);
-            text(dl, cx - lw / 2, y0, 'TP', full and { 1.0, 0.82, 0.42, 0.75 * v * ta } or { 0.62, 0.60, 0.72, 0.8 * v * ta });
-            imgui.SetWindowFontScale(fs0);
         end
     end
     if p < 1 then                                                    -- (the turn: a light across the middle, brightest edge-on)
@@ -10638,7 +10673,35 @@ function C.weather_packet(e)                                         -- (0x057: 
     elseif e.id == 0x00A then w = struct.unpack('H', e.data, 0x68 + 1); end
     if w and w >= 0 and w <= 19 then C.AMB.wx = w; end
 end
+function C.chat_chain()                                              -- (the chats joined side by side, left to right: the chat, the combat log anchored
+    local t = { 1 };                                                 --  beside it, the third chat joined; nil when it's only one)
+    if cfg.chat_split and cfg.chat_link and not cfg.chat_link_v then t[#t + 1] = 2; end
+    if cfg.chat3 and cfg.chat3_link then t[#t + 1] = 3; end
+    if #t < 2 then return nil; end
+    local px = { 'chat_x', 'chat2_x', 'chat3_x' };
+    table.sort(t, function(a, b) return (tonumber(cfg[px[a]]) or 0) < (tonumber(cfg[px[b]]) or 0); end);
+    return t;
+end
+function C.chat_strip()                                              -- (the chats joined side by side: on the chat's left? - true when there's no room on
+    local W = C.screen() or 1920;                                    --  its right; no room on either side: the chat slides over so they all fit, whole)
+    local tw, cx = tonumber(cfg.chat_w) or 620, tonumber(cfg.chat_x) or 20;
+    local rest = ((cfg.chat3 and cfg.chat3_link) and math.max(200, tonumber(cfg.chat3_w) or 460) or 0)
+        + ((cfg.chat_split and cfg.chat_link and not cfg.chat_link_v) and tw or 0);
+    if rest == 0 or cx + tw + rest <= W then return false; end
+    if cx - rest >= 0 then return true; end
+    cfg.chat_x = math.floor(math.max(0, W - tw - rest));
+    cw[1].relink = true;
+    return false;
+end
+function C.c3_free()                                                 -- (the third chat let go: up above the chats, clear of the combat log coming back)
+    if not cfg.chat3_link then
+        cfg.chat3_y = math.floor(math.max(0, (tonumber(cfg.chat_y) or 720) - (tonumber(cfg.chat3_h) or 260) - 44));
+        cw[3].relink = true;
+    end
+    save();
+end
 local function draw_chat(n)
+    for i = 1, 3 do cw[i].keep_open = cfg.chat_fade_old == false or cfg['chat_fade_w' .. i] == false; end
     if n == 1 then
         local sig = tostring(cfg.chat_time) .. tostring(cfg.chat_time_sec) .. tostring(cfg.chat_time_12) .. tostring(cfg.chat_time_case);
         if sig ~= C.tssig then if C.tssig then pcall(C.ts_rebuild); end C.tssig = sig; end
@@ -10675,15 +10738,29 @@ local function draw_chat(n)
     if n == 2 and cfg.chat_link then                                 -- anchored: the combat log sits right beside the chat, the same size,
         local tw, th = tonumber(cfg.chat_w) or 620, tonumber(cfg.chat_h) or 260;   -- its edges lined up, and follows it when it moves
         local cx_, cy_ = tonumber(cfg.chat_x) or 20, tonumber(cfg.chat_y) or 700;
-        local W, H = ALLY.screen();
+        local W, H = C.screen();                                     -- (the chats' own screen size, as the third chat's and the keep-on-screen use)
         W, H = W or 1920, H or 1080;
-        local nx, ny = cx_ + tw, cy_;                                -- (edge to edge: one panel)
+        local w3 = (cfg.chat3 and cfg.chat3_link) and math.max(200, tonumber(cfg.chat3_w) or 460) or 0;   -- (the third chat joined: between them)
+        local nx, ny = cx_ + tw + w3, cy_;                           -- (edge to edge: one panel)
         if cfg.chat_link_v then                                      -- (the anchor's 2nd click: on top of the chat, or under it if there's no room)
             nx, ny = cx_, cy_ - th;
             if ny < 0 then ny = cy_ + th; end
-        elseif nx + tw > W then nx = cx_ - tw; end                   -- (no room on its right: on its left)
+        elseif C.chat_strip() then nx = cx_ - tw - w3;               -- (no room on its right: on its left)
+        else nx = (tonumber(cfg.chat_x) or cx_) + tw + w3; end       -- (the chat may have slid over to make room)
         cfg.chat2_w, cfg.chat2_h = tw, th;
         cfg.chat2_x, cfg.chat2_y = math.floor(nx), math.floor(ny);
+        st.relink = true;
+    end
+    if n == 3 and cfg.chat3_link then                                -- anchored: the third chat right beside the chat (the combat log, anchored beside it,
+        local th = tonumber(cfg.chat_h) or 260;                      --  after it: chat | third chat | combat log) - the same height, its own width;
+        local cx_, cy_ = tonumber(cfg.chat_x) or 20, tonumber(cfg.chat_y) or 700;   --  no room on the right: on the left
+        local tw = tonumber(cfg.chat_w) or 620;
+        local w3 = math.max(200, tonumber(cfg.chat3_w) or 460);
+        local left_ = C.chat_strip();
+        cx_ = tonumber(cfg.chat_x) or cx_;                           -- (the chat may have slid over to make room)
+        local nx = left_ and (cx_ - w3) or (cx_ + tw);
+        cfg.chat3_h = th;
+        cfg.chat3_x, cfg.chat3_y = math.floor(nx), math.floor(cy_);
         st.relink = true;
     end
     local w, h = math.max(200, tonumber(cfg[p .. 'w']) or 600), math.max(80, tonumber(cfg[p .. 'h']) or 260);
@@ -10712,7 +10789,7 @@ local function draw_chat(n)
     st.relink = false;                                               -- (resized by its linked twin: placed again, its bottom kept)
     imgui.SetNextWindowSize({ w, h }, ImGuiCond_Always);
     local flags = CHATFLAGS;
-    if cfg.locked or (n == 2 and cfg.chat_link) then flags = bit.bor(flags, ImGuiWindowFlags_NoMove); end   -- (anchored: it moves with the chat)
+    if cfg.locked or (n == 2 and cfg.chat_link) or (n == 3 and cfg.chat3_link) then flags = bit.bor(flags, ImGuiWindowFlags_NoMove); end   -- (anchored: it moves with the chat)
     if big then                                                      -- (the big chat sits on top of everything: bars, damage...)
         flags = bit.band(flags, bit.bnot(ImGuiWindowFlags_NoBringToFrontOnFocus));
         pcall(imgui.SetNextWindowFocus);
@@ -10733,10 +10810,17 @@ local function draw_chat(n)
         local hov = imgui.IsWindowHovered(ImGuiHoveredFlags_AllowWhenBlockedByActiveItem or 0) or imgui.IsWindowFocused() and imgui.IsMouseDown(0);
         local typing = (n == 1 and cfg.chat_typing ~= false) and typing_now() or nil;   -- you're typing: it shows it (CHAT tab)
         st.hovraw = hov;
-        local linked = cfg.chat_link and cfg.chat_split and n ~= 3;   -- (the third chat stands on its own)
+        local linked = cfg.chat_link and cfg.chat_split and n ~= 3;   -- (the chat and the combat log anchored)
         local other = cw[(n == 1) and 2 or 1];
+        local chain = C.chat_chain();                                -- (the chats joined side by side, left to right; this one's place in it)
+        local pos_, sm_ = nil, {};
+        if chain then
+            for k_, v_ in ipairs(chain) do if v_ == n then pos_ = k_; end end
+            if pos_ then for _, v_ in ipairs(chain) do if v_ ~= n then sm_[#sm_ + 1] = cw[v_]; end end end
+        end
         local hovx = hov or (linked and other.hovraw) or false;     -- (anchored: the mouse over either lights both)
-        local keep_open = cfg.chat_fade_old == false;               -- (Fade when idle off: the whole panel stays open, even before any lines arrive)
+        for _, o_ in ipairs(sm_) do if o_.hovraw then hovx = true; end end
+        local keep_open = st.keep_open;               -- (Fade when idle off: the whole panel stays open, even before any lines arrive)
         local want = (keep_open or hovx or typing or chat_lit_all or st.scroll > 0) and 1 or 0;
         st.hv = keep_open and 1 or (st.hv + (want - st.hv) * math.min(1, (imgui.GetIO().DeltaTime or 0.016) * 8));
         if n == 1 then                                               -- CHAT > Back to All when it closes: a tab picked in the full screen chat
@@ -10746,12 +10830,8 @@ local function draw_chat(n)
                 if cfg.chat_tab_reset ~= false and (tonumber(cfg.chat_tab) or 1) ~= 1 then cfg.chat_tab = 1; save(); end
             end
         end
-        local right = (tonumber(cfg.chat2_x) or 0) > (tonumber(cfg.chat_x) or 0);   -- (which side the combat log is on)
-        local sl_, sr_ = false, false;
-        if linked and not cfg.chat_link_v then
-            if n == 1 then if right then sr_ = true; else sl_ = true; end
-            else if right then sl_ = true; else sr_ = true; end end
-        end
+        local sl_, sr_ = false, false;                               -- (joined side by side: another chat on its left / on its right)
+        if pos_ then sl_, sr_ = pos_ > 1, pos_ < #chain; end
         -- The chat's one look (no options): a soft dark ground with no edges, behind the newest lines when it's at rest (a
         -- little darker for a moment when a line arrives), growing to the whole chat when it's lit (the mouse over it,
         -- typing, scrolling). Readable on grass, snow or sand, and never a box.
@@ -10762,15 +10842,19 @@ local function draw_chat(n)
             local pulse = math.max(0, 1 - (now - last) / 2.5);
             st.pulse = pulse;
             local uh = st.used_h or 0;
-            local oth = linked and (keep_open or ((other.used_h or 0) > 0) or (other.hv or 0) > 0.02);   -- (the linked one shows a panel too: they join; empty, this one stands alone)
+            local othv = linked and cfg.chat_link_v and (other.keep_open or ((other.used_h or 0) > 0) or (other.hv or 0) > 0.02);   -- (the linked one shows a panel too: they join; empty, this one stands alone)
+            local oth = othv or false;
+            for _, o_ in ipairs(sm_) do if o_.keep_open or (o_.used_h or 0) > 0 or (o_.hv or 0) > 0.02 then oth = true; end end
             if linked and cfg.chat_link_v and C.clear_on() then      -- (anchored one on top of the other: the top one's panel as tall as
                 local me_y = tonumber(cfg[(n == 1) and 'chat_y' or 'chat2_y']) or 0;   --  its own lines; the bottom one's whole height when the top
                 local ot_y = tonumber(cfg[(n == 1) and 'chat2_y' or 'chat_y']) or 0;   --  one has lines - so they always meet, no gap between them)
                 if ot_y < me_y and (other.used_h or 0) > 0 then uh = h; end
                 pulse = math.max(pulse, other.pulse or 0);
-            elseif linked and (not C.clear_on() or (oth and uh > 0)) then   -- (anchored, both with lines: the same height and strength, so where they meet
-                uh = math.max(uh, other.used_h or 0);                 --  there's no step and no seam)
-                pulse = math.max(pulse, other.pulse or 0);
+            elseif #sm_ > 0 and (not C.clear_on() or (oth and uh > 0)) then   -- (joined, with lines: the same height and strength, so where they meet
+                for _, o_ in ipairs(sm_) do                           --  there's no step and no seam)
+                    uh = math.max(uh, o_.used_h or 0);
+                    pulse = math.max(pulse, o_.pulse or 0);
+                end
             end
             local gh = math.min(h, uh + 26);
             local gy = y + (h - gh) * (1 - st.hv);
@@ -10778,22 +10862,23 @@ local function draw_chat(n)
                 local A = math.max(0, math.min(1, tonumber(cfg.chat_panel_a) or 0.72));
                 if (gh > 30 or st.hv > 0.02) and not big then        -- (the big chat has its own panel)
                     local fl = C.rall;                               -- (round corners; linked side by side: only the outer ones, so the two read as one panel;
+                    local rr = YUI_HEX and 3 or 10;                  -- (Hex link: crisper corners)
                     if not oth then                                  --  the other one empty: all four)
+                    elseif sl_ and sr_ then rr = 0;                  -- (the middle one of three: square)
                     elseif sl_ then fl = ImDrawFlags_RoundCornersRight or ImDrawCornerFlags_Right or 10;
                     elseif sr_ then fl = ImDrawFlags_RoundCornersLeft or ImDrawCornerFlags_Left or 5; end
                     if linked and cfg.chat_link_v then               -- (linked one on top of the other: only the corners away from the other one)
                         local me_y = tonumber(cfg[(n == 1) and 'chat_y' or 'chat2_y']) or 0;
                         local ot_y = tonumber(cfg[(n == 1) and 'chat2_y' or 'chat_y']) or 0;
-                        if ot_y < me_y then fl = (keep_open or (other.used_h or 0) > 0) and (ImDrawFlags_RoundCornersBottom or ImDrawCornerFlags_Bot or 12) or C.rall;   -- (the top one empty: all round)
-                        else fl = oth and (ImDrawFlags_RoundCornersTop or ImDrawCornerFlags_Top or 3) or C.rall; end
+                        if ot_y < me_y then fl = (other.keep_open or (other.used_h or 0) > 0) and (ImDrawFlags_RoundCornersBottom or ImDrawCornerFlags_Bot or 12) or C.rall;   -- (the top one empty: all round)
+                        else fl = othv and (ImDrawFlags_RoundCornersTop or ImDrawCornerFlags_Top or 3) or C.rall; end
                     end
-                    local rr = YUI_HEX and 3 or 10;                  -- (Hex link: crisper corners)
                     local first_ = not oth or not (sl_ or (linked and cfg.chat_link_v and (tonumber(cfg[(n == 1) and 'chat2_y' or 'chat_y']) or 0) < (tonumber(cfg[(n == 1) and 'chat_y' or 'chat2_y']) or 0)));
                     local pfill = U4(0.055, 0.045, 0.08, math.min(1, A * (0.92 + 0.08 * pulse + 0.10 * st.hv)));
                     local kc = 18;                                   -- (Hex link: the top left corner cut at 45 degrees, as its frames' corners - big enough to read)
                     local mir = sl_ or (not sr_ and (x + w / 2) > (C.screen() / 2));   -- (a chat on the right of the screen, or the right one of two
                                                                      --  side by side: its top right corner cut - the two mirrored)
-                    local cutp = YUI_HEX and (first_ or sl_) and pcall(function()   -- (Hex link: light - the panel fades upward, faint at rest, full when lit)
+                    local cutp = YUI_HEX and (first_ or (sl_ and not sr_)) and pcall(function()   -- (Hex link: light - the panel fades upward, faint at rest, full when lit)
                         local pa = math.min(1, A * (1.12 + 0.08 * pulse + 0.10 * st.hv));
                         local top = pa * (0.78 + 0.22 * st.hv);   -- (at rest: still dark enough to read every line)
                         if mir then dl:AddConvexPolyFilled({ { x, gy }, { x + w - kc, gy }, { x + w, gy + kc }, { x + w, y + h }, { x, y + h } }, U4(0.055, 0.045, 0.08, top));
@@ -10885,7 +10970,7 @@ local function draw_chat(n)
                 if not C.c3_has(e) then i = i - 1; goto next_line; end
             elseif n == 1 and tab == 1 and not big and not only and not C.cm_has(e) then i = i - 1; goto next_line; end   -- (CHAT > Main chat shows)
             do
-            local keep = cfg.chat_fade_old == false;                 -- CHAT > Fade when idle: on, a line shows for 'Lines stay for' then fades
+            local keep = cfg.chat_fade_old == false or cfg['chat_fade_w' .. n] == false;   -- CHAT > Fade when idle (and that window's own switch): on, a line shows for 'Lines stay for' then fades
             local lt = keep and 1 or math.max(0, math.min(1, 1 - ((now - (e.t or now)) - hold) / fade));   --  away, shade and all (the chat
             local life = lt;                                         --  clears when nobody writes); off, every line stays
             local vis = math.max(st.hv, life);
@@ -11081,12 +11166,13 @@ local function draw_chat(n)
         local nowc = os.clock();                                     -- (the corner icons fade 5 s after the mouse leaves; back when it's over)
         if hov or st.lastov == nil then st.lastov = nowc; end
         local gf = math.max(0, math.min(1, 1 - (nowc - st.lastov - 5) / 0.6));
-        if n == 2 and gf > 0.02 and st.hv > 0.05 then                -- the anchor (the combat log's bottom right, while it's lit): beside the chat
+        if (n == 2 or n == 3) and gf > 0.02 and st.hv > 0.05 then    -- the anchor (the combat log's / third chat's bottom right, while it's lit): beside the chat
             local bs = 22;
             local ax, ay = x + w - bs - 10, y + h - bar + (bar - bs) / 2 - 2;
             imgui.SetCursorScreenPos({ ax, ay });
-            if imgui.InvisibleButton('##yui_chat_link', { bs, bs }) then   -- clicks go round: beside the chat -> on top of it (if there's room) -> free
-                if not cfg.chat_link then cfg.chat_link, cfg.chat_link_v = true, false;
+            if imgui.InvisibleButton('##yui_chat_link' .. n, { bs, bs }) then   -- clicks go round: beside the chat -> on top of it (if there's room) -> free
+                if n == 3 then cfg.chat3_link = not cfg.chat3_link; C.c3_free();   -- (the third chat: joined beside the chat, or free)
+                elseif not cfg.chat_link then cfg.chat_link, cfg.chat_link_v = true, false;
                 elseif not cfg.chat_link_v then
                     local _, H = ALLY.screen();
                     local th_, cy_ = tonumber(cfg.chat_h) or 260, tonumber(cfg.chat_y) or 700;
@@ -11096,13 +11182,14 @@ local function draw_chat(n)
                 save();
             end
             local hv2 = imgui.IsItemHovered();
-            if hv2 then YUI_TIP((not cfg.chat_link) and 'Anchor the combat log to the chat: beside it, the same size'
+            if hv2 and n == 3 then YUI_TIP(cfg.chat3_link and 'Joined to the other chats (click to free it)' or 'Join the third chat to the other chats: beside the chat, the same height');
+            elseif hv2 then YUI_TIP((not cfg.chat_link) and 'Anchor the combat log to the chat: beside it, the same size'
                 or ((not cfg.chat_link_v) and 'Beside the chat (click: on top of it)' or 'On top of the chat (click to free it)')); end
-            local on = cfg.chat_link == true;
+            local on = (n == 3) and cfg.chat3_link == true or (n == 2 and cfg.chat_link == true);
             local c = on and { 0.86, 0.58, 1.0, (hv2 and 1 or 0.9) * gf } or { 0.62, 0.60, 0.70, (hv2 and 1 or 0.7) * gf };
             local cx, cy = ax + bs / 2, ay + bs / 2;
             local vx, vy = 5, 0;                                     -- (the two dots: side by side, or one above the other when on top)
-            if on and cfg.chat_link_v then vx, vy = 0, 5; end
+            if on and n == 2 and cfg.chat_link_v then vx, vy = 0, 5; end
             if YUI_HEX then                                          -- (Hex link mode: two small hexagons, gold and azure, a dark rim each,
                 local a_ = c[4];                                     --  apart - a fine gold line joins them when anchored)
                 local hx_, hy_ = vx * 1.15, vy * 1.15;
@@ -11121,6 +11208,7 @@ local function draw_chat(n)
         end
         if not cfg.locked and not big then                           -- (the big chat has no resize grip)
             local gl = sr_;                                          -- (the left one of two side by side: its grip on its left, the outer corner)
+            if n == 3 and sl_ and sr_ then gl = (tonumber(cfg.chat3_x) or 0) < (tonumber(cfg.chat_x) or 0); end   -- (the third chat in the middle: on the side away from the chat)
             local gox = YUI_HEX and 16 or 9;                         -- (Hex link: inside the cut corner, not on its line)
             local goy = YUI_HEX and 11 or 9;
             imgui.SetCursorScreenPos({ gl and x or (x + w - 24), y });
@@ -11146,6 +11234,11 @@ local function draw_chat(n)
                     if cfg.chat_link and cfg.chat_split and n == 2 then -- (anchored: resizing the combat log resizes the chat too, its bottom kept)
                         cfg.chat_y = (tonumber(cfg.chat_y) or 700) + ((tonumber(cfg.chat_h) or 260) - nh);
                         cfg.chat_w, cfg.chat_h = nw, nh;
+                        cw[1].relink = true;
+                    end
+                    if cfg.chat3_link and n == 3 then                -- (joined: its height is the chat's - the chat's bottom kept)
+                        cfg.chat_y = (tonumber(cfg.chat_y) or 700) + ((tonumber(cfg.chat_h) or 260) - nh);
+                        cfg.chat_h = nh;
                         cw[1].relink = true;
                     end
                     imgui.ResetMouseDragDelta(0);
@@ -15349,6 +15442,7 @@ local function draw_window()
             hint('Main chat shows:');
             for _, q in ipairs(C.C3) do row_switch('##yui_cm_' .. q[1], '   ' .. q[2], 'cm_' .. q[1], 'Off: ' .. q[2] .. " are left out of the main chat's All tab (its " .. q[2] .. ' tab still shows them).'); end
             row_switch('##yui_c3', 'Third chat', 'chat3', 'On: one more chat window (move and size it like the others) for the channels you pick below - good on a wide screen.', nil, C.c3_pick);
+            if cfg.chat3 then row_switch('##yui_c3l', 'Join to the other chats', 'chat3_link', 'On: the third chat sits right beside the chat (the combat log, when it\'s anchored beside the chat, after it), the same height - one panel. Off: it moves on its own. Also its anchor at its bottom right.', nil, C.c3_free); end
             if cfg.chat3 then
                 hint('Third chat shows (picking one takes it out of the main chat - turn it on there again to have it in both):');
                 for _, q in ipairs(C.C3) do row_switch('##yui_c3_' .. q[1], '   ' .. q[2], 'c3_' .. q[1], 'On: ' .. q[2] .. ' show in the third chat.', nil, C.c3_pick); end
@@ -15404,7 +15498,13 @@ local function draw_window()
             row_switch('##yui_cfeed', 'Combat feed', 'chat_feed', 'On: a spell or ability is one line that grows as it happens (who > spell > target, then a tick, the damage, the HP healed or miss) instead of three or four lines. Only new lines.');
             if cfg.chat_feed ~= false then row_switch('##yui_crounds', 'Melee rounds', 'chat_rounds', 'On: one attack round (several hits - Kraken Club, double and triple attacks) is one line: who > target, hits, their damage, crits and misses. Only new lines.'); end
             row_switch('##yui_cfade', 'Fade when idle', 'chat_fade_old', 'On: each line shows for a while, then fades away, and the panel shrinks with it, so the chat clears when nobody writes (put the mouse over it to see everything). Off: all enabled chat windows stay fully expanded and every line stays visible, even when a window is empty.');
-            if cfg.chat_fade_old ~= false then row_slider('##yui_s_h', 'Lines stay for', 'chat_hold', 3, 60, 1, '%d s'); end
+            if cfg.chat_fade_old ~= false then
+                row_slider('##yui_s_h', 'Lines stay for', 'chat_hold', 3, 60, 1, '%d s');
+                hint('Which windows fade:');                         -- (each window on its own: off, its lines stay)
+                row_switch('##yui_cfw1', 'Main chat', 'chat_fade_w1');
+                if cfg.chat_split then row_switch('##yui_cfw2', 'Combat log', 'chat_fade_w2'); end
+                if cfg.chat3 then row_switch('##yui_cfw3', 'Third chat', 'chat_fade_w3'); end
+            end
             row_switch('##yui_cbub', 'Speech bubbles', 'chat_bubbles', 'On: say and party lines also show as a bubble over the head of whoever said it (when they\'re near you).');
             section('HISTORY');
             row_switch('##yui_csave', 'Save chat logs', 'chat_save', 'On: every chat line is also written to a text file, one per day: Ashita\\chatlogs\\<your name>_<date>.txt');
@@ -15461,6 +15561,8 @@ local function draw_window()
             row_switch('##yui_mm3f', 'Turn with you', 'map3d_follow', 'The minimap turns as you do, looking the way you face. Off: north stays up.');
             row_switch('##yui_mmtilt', 'Tilt the map', 'map_tilt', 'On: in zones with no 3D shape (most of the open country) the map lies on the ground under you, seen from behind you like the cities\' 3D look. Off: the flat map from above.');
             row_switch('##yui_mmm', 'Monsters', 'map_mobs', 'On: monsters near you show as red dots.');
+            row_switch('##yui_mmgp', 'Gathering points', 'map_gp', 'On: Mining, Harvesting, Logging, Excavation and Clamming Points near you show as gold diamonds.');
+            row_switch('##yui_mmnpc', 'NPCs', 'map_npcs', 'On: NPCs near you (the ones you can talk to) show as small green dots.');
             row_switch('##yui_mmx', 'Zone exits', 'map_exits', 'On: the way out of the zone shows as a gold line, with the name of the zone it leads to.');
             if cfg.target_fx ~= 'link' then                          -- (Normal mode: the lines in your HP bar's colour, or white)
                 row_pick('##yui_mml', 'Lines', 'map_lines', { { 'hp', 'As your HP bar' }, { 'white', 'White' } });
@@ -16724,6 +16826,30 @@ function YMAP.mobs_near(ent)                                         -- monsters
     YMAP.mobs = out;
     return out;
 end
+YMAP.GP = { ['Mining Point'] = true, ['Harvesting Point'] = true, ['Logging Point'] = true, ['Excavation Point'] = true, ['Clamming Point'] = true };
+YMAP.npcs, YMAP.npcs_t = {}, -9;
+function YMAP.npcs_near(ent)                                         -- MINIMAP > Gathering points / NPCs: the ones around (the game knows them
+    local now = os.clock();                                          --  within ~50 yalms), refreshed twice a second; 'gp' a gathering point, 'npc' an NPC
+    if now - YMAP.npcs_t < 0.5 then return YMAP.npcs; end
+    YMAP.npcs_t = now;
+    local out = {};
+    local wn = cfg.map_npcs == true;
+    for i = 1, 2303 do                                               -- (past 0x700 too: NPCs the server adds - the EXP Guide)
+        pcall(function()
+            if (ent:GetRenderFlags0(i) or 0) == 0 then return; end
+            local fl = ent:GetSpawnFlags(i) or 0;                    -- (0x01 a player; 0x02 an NPC; 0x20 too: an object - a door, a lamp; 0x10 a monster)
+            if bit.band(fl, 0x01) ~= 0 then return; end
+            local n = ent:GetName(i);
+            if not n or n == '' then return; end
+            local kind = nil;
+            if YMAP.GP[n] then kind = 'gp';
+            elseif wn and bit.band(fl, 0x02) ~= 0 and bit.band(fl, 0x30) == 0 and n:sub(1, 1) ~= '_' then kind = 'npc'; end
+            if kind then out[#out + 1] = { ent:GetLocalPositionX(i), ent:GetLocalPositionY(i), i, ent:GetLocalPositionZ(i) or 0, kind }; end
+        end);
+    end
+    YMAP.npcs = out;
+    return out;
+end
 -- Widescan > Track: the game sends the tracked monster's place every few seconds (0x0F5: x, height, north, its index,
 -- 1 while tracking); its name comes from the Widescan list (0x0F4). On the map: a pulsing ring and its name - off the
 -- map, at the map's edge on the way to it. Gone when tracking stops, after 15 s with no news, or on zoning.
@@ -16840,6 +16966,27 @@ function YMAP.marks(dl, ent, party, zid, me, tomap, sc, inside, tilted)
         DL.CF(dl, sx, sy, r + 1.2, U4(0, 0, 0, 0.85), 12);
         DL.CF(dl, sx, sy, r, u32(col), 12);
         if ring then DL.C(dl, sx, sy, r + 4 * sc, U4(1, 1, 1, 0.95), 16, 1.6); end
+    end
+    if cfg.map_gp ~= false or cfg.map_npcs == true then             -- MINIMAP > Gathering points (a gold diamond) / NPCs (a small green dot) - another floor fades
+        local myz = ent:GetLocalPositionZ(me) or 0;
+        for _, m in ipairs(YMAP.npcs_near(ent)) do
+            local fa = 1 - math.max(0, math.min(1, (math.abs((m[4] or myz) - myz) - 6) / 4));
+            if fa > 0.05 or m[3] == tidx then
+                local sx, sy = tomap(m[1], m[2]);
+                if inside(sx, sy) then
+                    if m[5] == 'gp' and cfg.map_gp ~= false then
+                        local r = 3.6 * sc;
+                        local a_ = math.max(fa, 0.3);
+                        local pts = { { sx, sy - r - 1.2 }, { sx + r + 1.2, sy }, { sx, sy + r + 1.2 }, { sx - r - 1.2, sy } };
+                        ALLY.poly(dl, pts, U4(0, 0, 0, 0.85 * a_));
+                        ALLY.poly(dl, { { sx, sy - r }, { sx + r, sy }, { sx, sy + r }, { sx - r, sy } }, U4(1.0, 0.80, 0.30, a_));
+                        if m[3] == tidx then DL.C(dl, sx, sy, r + 4 * sc, U4(1, 1, 1, 0.95), 16, 1.6); end
+                    elseif m[5] == 'npc' then
+                        dot(m[1], m[2], { 0.45, 0.90, 0.55, 0.85 * math.max(fa, 0.3) }, 1.8 * sc, m[3] == tidx);
+                    end
+                end
+            end
+        end
     end
     if cfg.map_mobs ~= false then                                   -- (monsters on another floor - over 6 yalms up or down - fade, gone past 10)
         local myz = ent:GetLocalPositionZ(me) or 0;
@@ -17159,6 +17306,31 @@ function YMAP.d3render(dl, m, ent, party, zid, me, sc, vx, vy, W, H, yaw, pitch,
         DL.CF(dl, px, py, r + 1.2, U4(0, 0, 0, 0.85), 12);
         DL.CF(dl, px, py, r, u32(col), 12);
         if ring then DL.C(dl, px, py, r + 4 * sc, U4(1, 1, 1, 0.95), 16, 1.6); end
+    end
+    if cfg.map_gp ~= false or cfg.map_npcs == true then             -- MINIMAP > Gathering points (a gold diamond) / NPCs (a small green dot)
+        for _, mo in ipairs(YMAP.npcs_near(ent)) do
+            local mz = mo[4] or Z;
+            local fa = 1 - math.max(0, math.min(1, (math.abs(mz - Z) - 6) / 4));
+            if fa > 0.05 or mo[3] == tidx then
+                if mo[5] == 'gp' and cfg.map_gp ~= false then
+                    local px, py = proj(mo[1], mz * hs, mo[2]);
+                    local okp = px ~= nil and px >= x0 and px <= x1 and py >= y0 and py <= y1;
+                    if okp and soft then
+                        local ex, ey = (px - cxs) / (W / 2), (py - cys) / (H / 2);
+                        okp = ex * ex + ey * ey <= 0.80;
+                    end
+                    if okp then
+                        local r = 3.8 * sc;
+                        local a_ = math.max(fa, 0.3);
+                        ALLY.poly(dl, { { px, py - r - 1.2 }, { px + r + 1.2, py }, { px, py + r + 1.2 }, { px - r - 1.2, py } }, U4(0, 0, 0, 0.85 * a_));
+                        ALLY.poly(dl, { { px, py - r }, { px + r, py }, { px, py + r }, { px - r, py } }, U4(1.0, 0.80, 0.30, a_));
+                        if mo[3] == tidx then DL.C(dl, px, py, r + 4 * sc, U4(1, 1, 1, 0.95), 16, 1.6); end
+                    end
+                elseif mo[5] == 'npc' then
+                    dot(mo[1], mo[2], mz, { 0.45, 0.90, 0.55, 0.85 * math.max(fa, 0.3) }, 1.9 * sc, mo[3] == tidx);
+                end
+            end
+        end
     end
     if cfg.map_mobs ~= false then
         for _, mo in ipairs(YMAP.mobs_near(ent)) do
