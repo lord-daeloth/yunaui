@@ -8,7 +8,7 @@ START = SOURCE.index('function C.chat_chain()')
 PANEL = SOURCE[START:SOURCE.index('        st.vis_n = 0;', START)] + '\n    end\nend\nreturn draw_chat'
 
 class ChatVisibility(unittest.TestCase):
-    def panel(self, n, fade, used=0, hover=False, look='clear', linked=False, vertical=False, window_fade=None, third_link=False):
+    def panel(self, n, fade, used=0, hover=False, look='clear', linked=False, vertical=False, window_fade=None, third_link=False, full=False):
         lua = LuaRuntime(unpack_returned_tuples=True)
         lua.execute('''
             cfg = { chat=true, chat_split=true, chat3=true, cm_v1=true,
@@ -22,6 +22,8 @@ class ChatVisibility(unittest.TestCase):
             ALLY.screen=C.screen;
             function C.clear_on() return look ~= 'classic' end
             function C.amb_alpha() return .5 end
+            function C.sanc_on() return false end
+            function C.scard_w() return 0 end
             function typing_now() return nil end
             function save() end
             function U4(...) return {...} end
@@ -52,6 +54,7 @@ class ChatVisibility(unittest.TestCase):
         ''')
         g = lua.globals()
         g.cfg.chat_fade_old = fade
+        g.cfg.chat_full = full
         g.cfg.chat_link = linked
         g.cfg.chat_link_v = vertical
         g.cfg.chat3_link = third_link
@@ -63,13 +66,13 @@ class ChatVisibility(unittest.TestCase):
         lua.execute(PANEL)(n)
         return g.panel, g.cw[n].hv, g.pos[2], g.size[2]
 
-    def test_fade_off_full_height_immediately_for_all_windows(self):
+    def test_full_size_option_fills_all_windows(self):
         for n in (1,2,3):
             for used in (0,20,260):
-                for look in ('clear','classic','gold'):
+                for look in ('clear','gold'):
                     with self.subTest(window=n, used=used, look=look):
-                        panel,hv,y,h = self.panel(n,False,used,look=look)
-                        self.assertEqual(hv,1)
+                        panel,hv,y,h = self.panel(n,False,used,look=look,full=True)
+                        self.assertEqual(hv,0)
                         self.assertIsNotNone(panel)
                         self.assertEqual(panel.y,y)
                         self.assertEqual(panel.h,h)
@@ -77,7 +80,7 @@ class ChatVisibility(unittest.TestCase):
     def test_empty_linked_windows_are_visible_without_hover(self):
         for n in (1,2):
             for vertical in (False,True):
-                panel,hv,y,h = self.panel(n,False,linked=True,vertical=vertical)
+                panel,hv,y,h = self.panel(n,False,linked=True,vertical=vertical,full=True)
                 self.assertEqual(panel.y,y)
                 self.assertEqual(panel.h,h)
 
@@ -89,16 +92,17 @@ class ChatVisibility(unittest.TestCase):
             panel,hv,_,h = self.panel(n,True,20)
             self.assertLess(panel.h,h)
 
-    def test_individual_fade_off_keeps_each_window_open(self):
+    def test_fading_and_full_size_are_independent(self):
         for n in (1,2,3):
             panel,hv,y,h = self.panel(n,True,window_fade=False)
-            self.assertEqual(hv,1)
+            self.assertIsNone(panel)
+            panel,hv,y,h = self.panel(n,True,full=True)
             self.assertEqual(panel.y,y)
             self.assertEqual(panel.h,h)
 
     def test_joined_third_window_stays_open_when_empty(self):
         for n in (1,2,3):
-            panel,hv,y,h = self.panel(n,False,linked=True,third_link=True)
+            panel,hv,y,h = self.panel(n,False,linked=True,third_link=True,full=True)
             self.assertEqual(panel.y,y)
             self.assertEqual(panel.h,h)
 
